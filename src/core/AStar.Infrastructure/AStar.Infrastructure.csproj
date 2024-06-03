@@ -49,6 +49,7 @@
 	</ItemGroup>
 	
 	<ItemGroup>
+		<PackageReference Include="AStar.Utilities" Version="1.3.0" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.6" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.6" />
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.6">
@@ -60,10 +61,6 @@
 	<ItemGroup>
 	  <ProjectReference Include="..\AStar.GuardClauses\AStar.GuardClauses.csproj" />
 	  <ProjectReference Include="..\AStar.Web.Domain\AStar.Web.Domain.csproj" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <ProjectReference Include="..\AStar.Utilities\AStar.Utilities.csproj" />
 	</ItemGroup>
 	
 </Project>
