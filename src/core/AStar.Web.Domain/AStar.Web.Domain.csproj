@@ -15,7 +15,8 @@
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <PackageReference Include="AStar.Utilities" Version="1.3.0" />
+		<PackageReference Include="AStar.Utilities" Version="1.3.0" />
+		<PackageReference Include="AStar.Logging.Extensions" Version="0.3.0" />
 		<PackageReference Include="AStar.GuardClauses" Version="0.1.1" />
 	</ItemGroup>
 
