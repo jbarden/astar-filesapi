@@ -17,6 +17,7 @@
 		<PackageReference Include="AStar.GuardClauses" Version="0.1.1" />
 		<PackageReference Include="AStar.Api.HealthChecks" Version="0.3.0" />
 		<PackageReference Include="AStar.Logging.Extensions" Version="0.3.0" />
+		<PackageReference Include="AStar.ASPNet.Extensions" Version="0.6.0" />		
 		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.6" />
 		<PackageReference Include="AutoMapper" Version="13.0.1" />
 		<PackageReference Include="FluentValidation" Version="11.9.1" />
@@ -28,7 +29,6 @@
 		<PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.6.2" />
 		<PackageReference Include="System.IO.Abstractions" Version="21.0.2" />
 	</ItemGroup>	<ItemGroup>
-	  <ProjectReference Include="..\..\core\AStar.ASPNet.Extensions\AStar.ASPNet.Extensions.csproj" />
 	  <ProjectReference Include="..\..\core\AStar.Infrastructure\AStar.Infrastructure.csproj" />
 	  <ProjectReference Include="..\..\core\AStar.Web.Domain\AStar.Web.Domain.csproj" />
 	</ItemGroup>
