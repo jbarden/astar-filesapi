@@ -34,6 +34,7 @@
 
   <ItemGroup>
 		<PackageReference Include="AStar.Utilities" Version="1.3.0" />
+	  <PackageReference Include="AStar.GuardClauses" Version="0.1.1" />
 		<PackageReference Include="Microsoft.ApplicationInsights.AspNetCore" Version="2.22.0" />
 		<PackageReference Include="Serilog.AspNetCore" Version="8.0.1" />
 		<PackageReference Include="Serilog.Enrichers.Span" Version="3.1.0" />
@@ -61,10 +62,6 @@
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
-	</ItemGroup>
-
-	<ItemGroup>
-	  <ProjectReference Include="..\AStar.GuardClauses\AStar.GuardClauses.csproj" />
 	</ItemGroup>
 
 </Project>

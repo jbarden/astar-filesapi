@@ -14,6 +14,7 @@
 	<ItemGroup>
 		<PackageReference Include="Ardalis.ApiEndpoints.Swashbuckle" Version="4.1.0" />
 		<PackageReference Include="AStar.Utilities" Version="1.3.0" />
+		<PackageReference Include="AStar.GuardClauses" Version="0.1.1" />
 		<PackageReference Include="AStar.Api.HealthChecks" Version="0.3.0" />
 		<PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.6" />
 		<PackageReference Include="AutoMapper" Version="13.0.1" />
@@ -27,7 +28,6 @@
 		<PackageReference Include="System.IO.Abstractions" Version="21.0.2" />
 	</ItemGroup>	<ItemGroup>
 	  <ProjectReference Include="..\..\core\AStar.ASPNet.Extensions\AStar.ASPNet.Extensions.csproj" />
-	  <ProjectReference Include="..\..\core\AStar.GuardClauses\AStar.GuardClauses.csproj" />
 	  <ProjectReference Include="..\..\core\AStar.Infrastructure\AStar.Infrastructure.csproj" />
 	  <ProjectReference Include="..\..\core\AStar.Logging.Extensions\AStar.Logging.Extensions.csproj" />
 	  <ProjectReference Include="..\..\core\AStar.Web.Domain\AStar.Web.Domain.csproj" />
