@@ -1,0 +1,62 @@
+﻿[
+  {
+    Rel: self,
+    Href: /,
+    Method: GET
+  },
+  {
+    Rel: count,
+    Href: api/files/count,
+    Method: GET
+  },
+  {
+    Rel: count-duplicates,
+    Href: api/files/count-duplicates,
+    Method: GET
+  },
+  {
+    Rel: list,
+    Href: api/files/list,
+    Method: GET
+  },
+  {
+    Rel: list-duplicates,
+    Href: api/files/list-duplicates,
+    Method: GET
+  },
+  {
+    Rel: self,
+    Href: api/files/mark-for-hard-deletion,
+    Method: DELETE
+  },
+  {
+    Rel: self,
+    Href: api/files/mark-for-moving,
+    Method: DELETE
+  },
+  {
+    Rel: self,
+    Href: api/files/mark-for-soft-deletion,
+    Method: DELETE
+  },
+  {
+    Rel: self,
+    Href: api/files/undo-mark-for-hard-deletion,
+    Method: DELETE
+  },
+  {
+    Rel: self,
+    Href: api/files/undo-mark-for-moving,
+    Method: DELETE
+  },
+  {
+    Rel: self,
+    Href: api/files/undo-mark-for-soft-deletion,
+    Method: DELETE
+  },
+  {
+    Rel: self,
+    Href: api/files/update-directory,
+    Method: PUT
+  }
+]

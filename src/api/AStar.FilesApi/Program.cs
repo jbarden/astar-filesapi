@@ -1,8 +1,11 @@
-using System.IO.Abstractions;
 using AStar.ASPNet.Extensions.PipelineExtensions;
 using AStar.ASPNet.Extensions.ServiceCollectionExtensions;
-using AStar.Infrastructure.Data;
-using Microsoft.Extensions.Configuration;
+using AStar.ASPNet.Extensions.WebApplicationBuilderExtensions;
+using AStar.FilesApi.StartupConfiguration;
+using AStar.Infrastructure.Models;
+using AStar.Logging.Extensions;
+using Microsoft.OpenApi.Models;
+using Serilog;
 
 namespace AStar.FilesApi;
 
@@ -12,26 +15,42 @@ public static class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
-        _ = builder.AddLogging();
-        _ = builder.Services.ConfigurePipeline();
-        var configuration = builder.Configuration;
-        var config = configuration.GetDebugView();
-        Console.WriteLine(config);
-        _ = ConfigureServices(builder.Services);
+        try
+        {
+            _ = builder.CreateBootstrapLogger("astar-logging-settings.json")
+                       .DisableServerHeader()
+                       .AddLogging("astar-logging-settings.json");
 
-        var app = builder.Build();
-        _ = app.ConfigurePipeline();
-        _ = ConfigurePipeline(app);
-        app.Run();
-    }
+            Log.Information("Starting {AppName}", typeof(Program).AssemblyQualifiedName);
+            _ = builder.Services.ConfigureApi(new OpenApiInfo() { Title = "AStar Web Files API", Version = "v1" });
+            _ = Services.Configure(builder.Services, builder.Configuration);
 
-    private static IServiceCollection ConfigureServices(IServiceCollection services)
-    {
-        _ = services.AddDbContext<FilesContext>();
-        _ = services.AddSwaggerGenNewtonsoftSupport();
-        _ = services.AddSingleton<IFileSystem, FileSystem>();
+#pragma warning disable S1075 // URIs should not be hardcoded
+            var filesAsString = System.IO.File.ReadAllText(@"F:\repos\astar-filesapi\tests\unit\AStar.FilesApi.Unit.Tests\TestFiles\files.json");
+            var filesAsObjects = System.Text.Json.JsonSerializer.Deserialize<IList<FileDetail>>(filesAsString);
+            System.IO.File.WriteAllText(@"F:\repos\astar-filesapi\tests\unit\AStar.FilesApi.Unit.Tests\TestFiles\files.json", System.Text.Json.JsonSerializer.Serialize(filesAsObjects));
+#pragma warning restore S1075 // URIs should not be hardcoded
+            
+            foreach (var file in filesAsObjects!.Where(fd=>fd.DirectoryName == "c:\\temp\\Famous\\coats").OrderBy(file=> file.FullNameWithPath))
+            {
+                Console.WriteLine(file.FullNameWithPath);
+            }
 
-        return services;
+            var app = builder.Build()
+                             .ConfigurePipeline();
+
+            _ = ConfigurePipeline(app);
+
+            app.Run();
+        }
+        catch(Exception ex)
+        {
+            Log.Error(ex, "Fatal error occurred in {AppName}", typeof(Program).AssemblyQualifiedName);
+        }
+        finally
+        {
+            Log.CloseAndFlush();
+        }
     }
 
     private static WebApplication ConfigurePipeline(WebApplication app)

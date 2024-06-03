@@ -1,0 +1,46 @@
+﻿[
+  {
+    Name: wallhaven-yxre17.jpg,
+    FullName: c:\temp\Famous\coats\wallhaven-yxre17.jpg,
+    Size: 179564,
+    LastViewed: DateTime_1,
+    Extension: jpg,
+    SoftDeleted: false,
+    SoftDeletePending: false,
+    NeedsToMove: false,
+    HardDeletePending: false
+  },
+  {
+    Name: wallhaven-jxoyoq.jpg,
+    FullName: c:\temp\Famous\coats\wallhaven-jxoyoq.jpg,
+    Size: 223338,
+    LastViewed: DateTime_2,
+    Extension: jpg,
+    SoftDeleted: false,
+    SoftDeletePending: false,
+    NeedsToMove: false,
+    HardDeletePending: false
+  },
+  {
+    Name: wallhaven-851jjy.jpg,
+    FullName: c:\temp\Famous\coats\wallhaven-851jjy.jpg,
+    Size: 296929,
+    LastViewed: DateTime_3,
+    Extension: jpg,
+    SoftDeleted: false,
+    SoftDeletePending: false,
+    NeedsToMove: false,
+    HardDeletePending: false
+  },
+  {
+    Name: wallhaven-3k313y.jpg,
+    FullName: c:\temp\Famous\coats\wallhaven-3k313y.jpg,
+    Size: 387073,
+    LastViewed: DateTime_4,
+    Extension: jpg,
+    SoftDeleted: false,
+    SoftDeletePending: false,
+    NeedsToMove: false,
+    HardDeletePending: false
+  }
+]

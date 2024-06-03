@@ -1,0 +1,682 @@
+﻿[
+  {
+    Group: {
+      FileLength: 4922103
+    },
+    Files: [
+      {
+        Name: wallhaven-2y5139.jpg,
+        FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\Playmate\wallhaven-2y5139.jpg,
+        Size: 4922103,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-2y5139.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Playmate\wallhaven-2y5139.jpg,
+        Size: 4922103,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-2y5139.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Sara Jean Underwood - Copy\Playmate\wallhaven-2y5139.jpg,
+        Size: 4922103,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 3958283
+    },
+    Files: [
+      {
+        Name: wallhaven-yxrqvk.jpg,
+        FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\Playmate\wallhaven-yxrqvk.jpg,
+        Size: 3958283,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-yxrqvk.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Playmate\wallhaven-yxrqvk.jpg,
+        Size: 3958283,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-yxrqvk.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Sara Jean Underwood - Copy\Playmate\wallhaven-yxrqvk.jpg,
+        Size: 3958283,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 3746029
+    },
+    Files: [
+      {
+        Name: wallhaven-rrzqoq.jpg,
+        FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\wallhaven-rrzqoq.jpg,
+        Size: 3746029,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-rrzqoq.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\wallhaven-rrzqoq.jpg,
+        Size: 3746029,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-rrzqoq.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Sara Jean Underwood - Copy\wallhaven-rrzqoq.jpg,
+        Size: 3746029,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 3712496
+    },
+    Files: [
+      {
+        Name: wallhaven-wer5m6.jpg,
+        FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\Playmate\wallhaven-wer5m6.jpg,
+        Size: 3712496,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-wer5m6.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Playmate\wallhaven-wer5m6.jpg,
+        Size: 3712496,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-wer5m6.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Sara Jean Underwood - Copy\Playmate\wallhaven-wer5m6.jpg,
+        Size: 3712496,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 3562538
+    },
+    Files: [
+      {
+        Name: wallhaven-kx68k7.jpg,
+        FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\wallhaven-kx68k7.jpg,
+        Size: 3562538,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-kx68k7.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\wallhaven-kx68k7.jpg,
+        Size: 3562538,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-kx68k7.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Sara Jean Underwood - Copy\wallhaven-kx68k7.jpg,
+        Size: 3562538,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 3556493
+    },
+    Files: [
+      {
+        Name: wallhaven-1pmqx3.jpg,
+        FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\wallhaven-1pmqx3.jpg,
+        Size: 3556493,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-1pmqx3.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Sara Jean Underwood - Copy\wallhaven-1pmqx3.jpg,
+        Size: 3556493,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 3483430
+    },
+    Files: [
+      {
+        Name: wallhaven-qz8rgd.jpg,
+        FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\wallhaven-qz8rgd.jpg,
+        Size: 3483430,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-qz8rgd.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\wallhaven-qz8rgd.jpg,
+        Size: 3483430,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-qz8rgd.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Sara Jean Underwood - Copy\wallhaven-qz8rgd.jpg,
+        Size: 3483430,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 3381902
+    },
+    Files: [
+      {
+        Name: wallhaven-9dyo8d.jpg,
+        FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\wallhaven-9dyo8d.jpg,
+        Size: 3381902,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-9dyo8d.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\wallhaven-9dyo8d.jpg,
+        Size: 3381902,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-9dyo8d.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Sara Jean Underwood - Copy\wallhaven-9dyo8d.jpg,
+        Size: 3381902,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 3373501
+    },
+    Files: [
+      {
+        Name: 20080719 014.jpg,
+        FullName: c:\temp\Home\month04\20080719 014.jpg,
+        Size: 3373501,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: 4.jpg,
+        FullName: c:\temp\1st Year Frame\4.jpg,
+        Size: 3373501,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 3172079
+    },
+    Files: [
+      {
+        Name: wallhaven-5g8yr3.jpg,
+        FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\Playmate\wallhaven-5g8yr3.jpg,
+        Size: 3172079,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-5g8yr3.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Playmate\wallhaven-5g8yr3.jpg,
+        Size: 3172079,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-5g8yr3.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Sara Jean Underwood - Copy\Playmate\wallhaven-5g8yr3.jpg,
+        Size: 3172079,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 2724125
+    },
+    Files: [
+      {
+        Name: wallhaven-qz8rld.jpg,
+        FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\Playmate\lingerie\wallhaven-qz8rld.jpg,
+        Size: 2724125,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-qz8rld.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Playmate\lingerie\wallhaven-qz8rld.jpg,
+        Size: 2724125,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-qz8rld.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Sara Jean Underwood - Copy\Playmate\lingerie\wallhaven-qz8rld.jpg,
+        Size: 2724125,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 2688298
+    },
+    Files: [
+      {
+        Name: wallhaven-1pmqr3.jpg,
+        FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\Playmate\lingerie\sideboob\ass\wallhaven-1pmqr3.jpg,
+        Size: 2688298,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-1pmqr3.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Playmate\lingerie\sideboob\ass\wallhaven-1pmqr3.jpg,
+        Size: 2688298,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-1pmqr3.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Sara Jean Underwood - Copy\Playmate\lingerie\sideboob\ass\wallhaven-1pmqr3.jpg,
+        Size: 2688298,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 2673470
+    },
+    Files: [
+      {
+        Name: wallhaven-7pqjwv.jpg,
+        FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\wallhaven-7pqjwv.jpg,
+        Size: 2673470,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-7pqjwv.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\wallhaven-7pqjwv.jpg,
+        Size: 2673470,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-7pqjwv.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Sara Jean Underwood - Copy\wallhaven-7pqjwv.jpg,
+        Size: 2673470,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 2411003
+    },
+    Files: [
+      {
+        Name: wallhaven-p9xoje.jpg,
+        FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\wallhaven-p9xoje.jpg,
+        Size: 2411003,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-p9xoje.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\wallhaven-p9xoje.jpg,
+        Size: 2411003,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 2384565
+    },
+    Files: [
+      {
+        Name: wallhaven-jxoekq.jpg,
+        FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\wallhaven-jxoekq.jpg,
+        Size: 2384565,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-jxoekq.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\wallhaven-jxoekq.jpg,
+        Size: 2384565,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-jxoekq.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Sara Jean Underwood - Copy\wallhaven-jxoekq.jpg,
+        Size: 2384565,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 2299644
+    },
+    Files: [
+      {
+        Name: wallhaven-851gd2.jpg,
+        FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\wallhaven-851gd2.jpg,
+        Size: 2299644,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-851gd2.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\wallhaven-851gd2.jpg,
+        Size: 2299644,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-851gd2.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Sara Jean Underwood - Copy\wallhaven-851gd2.jpg,
+        Size: 2299644,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 2166448
+    },
+    Files: [
+      {
+        Name: wallhaven-l87ykr.jpg,
+        FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\wallhaven-l87ykr.jpg,
+        Size: 2166448,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-l87ykr.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\wallhaven-l87ykr.jpg,
+        Size: 2166448,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: wallhaven-l87ykr.jpg,
+        FullName: c:\temp\Famous\Sara Jean Underwood\Sara Jean Underwood - Copy\wallhaven-l87ykr.jpg,
+        Size: 2166448,
+        Extension: jpg,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 712847
+    },
+    Files: [
+      {
+        Name: files.list.txt,
+        FullName: c:\temp\files.list.txt,
+        Size: 712847,
+        Extension: txt,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: files.list.txt,
+        FullName: c:\temp\Famous\files.list.txt,
+        Size: 712847,
+        Extension: txt,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 75911
+    },
+    Files: [
+      {
+        Name: api-creation-log.txt,
+        FullName: c:\temp\api-creation-log.txt,
+        Size: 75911,
+        Extension: txt,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: api-creation-log.txt,
+        FullName: c:\temp\Famous\api-creation-log.txt,
+        Size: 75911,
+        Extension: txt,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 47616
+    },
+    Files: [
+      {
+        Name: AStar.Web.UI.dll,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\bin\Debug\net8.0\AStar.Web.UI.dll,
+        Size: 47616,
+        Extension: dll,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: AStar.Web.UI.dll,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net8.0\AStar.Web.UI.dll,
+        Size: 47616,
+        Extension: dll,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  }
+]
