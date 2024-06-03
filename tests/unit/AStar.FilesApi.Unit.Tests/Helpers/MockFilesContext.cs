@@ -1,6 +1,6 @@
 ﻿using System.Text.Json;
 using AStar.Infrastructure.Data;
-using AStar.Infrastructure.Models;
+using AStar.Web.Domain;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 
@@ -9,6 +9,7 @@ namespace AStar.FilesApi.Helpers;
 public class MockFilesContext : IDisposable
 {
     private readonly SqliteConnection connection;
+    private readonly DbContextOptions<FilesContext> contextOptions;
     private bool disposedValue;
 
     public MockFilesContext()
@@ -18,8 +19,13 @@ public class MockFilesContext : IDisposable
         connection = new SqliteConnection("Filename=:memory:");
         connection.Open();
 
+        // These options will be used by the context instances in this test suite, including the connection opened above.
+        contextOptions = new DbContextOptionsBuilder<FilesContext>()
+            .UseSqlite(connection)
+            .Options;
+
         // Create the schema and seed some data
-        using var context = new FilesContext();
+        using var context = new FilesContext(contextOptions);
 
         _ = context.Database.EnsureCreated();
 
@@ -27,7 +33,7 @@ public class MockFilesContext : IDisposable
         _ = context.SaveChanges();
     }
 
-    public FilesContext CreateContext() => new();
+    public FilesContext CreateContext() => new(contextOptions);
 
     public void Dispose()
     {

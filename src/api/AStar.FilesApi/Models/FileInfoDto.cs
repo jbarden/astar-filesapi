@@ -1,5 +1,5 @@
 ﻿using System.Text.Json;
-using AStar.Infrastructure.Models;
+using AStar.Web.Domain;
 
 namespace AStar.FilesApi.Models;
 

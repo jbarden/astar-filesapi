@@ -8,10 +8,7 @@ public class ListDuplicatesShould : IClassFixture<ListDuplicatesFixture>
 {
     private readonly ListDuplicatesFixture mockFilesFixture;
 
-    public ListDuplicatesShould(ListDuplicatesFixture mockFilesFixture)
-    {
-        this.mockFilesFixture = mockFilesFixture;
-    }
+    public ListDuplicatesShould(ListDuplicatesFixture mockFilesFixture) => this.mockFilesFixture = mockFilesFixture;
 
     [Fact]
     public async Task ReturnBadRequestWhenNoSearchFolderSpecified()

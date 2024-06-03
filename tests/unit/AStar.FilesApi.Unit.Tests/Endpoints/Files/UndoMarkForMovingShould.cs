@@ -7,10 +7,7 @@ public class UndoMarkForMovingShould : IClassFixture<UndoMarkForMovingFixture>
 {
     private readonly UndoMarkForMovingFixture mockFilesFixture;
 
-    public UndoMarkForMovingShould(UndoMarkForMovingFixture mockFilesFixture)
-    {
-        this.mockFilesFixture = mockFilesFixture;
-    }
+    public UndoMarkForMovingShould(UndoMarkForMovingFixture mockFilesFixture) => this.mockFilesFixture = mockFilesFixture;
 
     [Theory]
     [InlineData(" ")]

@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>AStar Guard Clauses</Title>
+    <Version>0.1.0</Version>
+    <Authors>Jason Barden</Authors>
+    <Company>AStar Development</Company>
+    <Description>A group of Guard Clauses to simplify the traditional "IsNull" assertions.</Description>
+    <Copyright>AStar Development 2025</Copyright>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <DocumentationFile>$(MSBuildProjectName).xml</DocumentationFile>
+    <RunPostBuildEvent>Always</RunPostBuildEvent>
+  </PropertyGroup>
+
+</Project>

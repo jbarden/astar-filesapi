@@ -7,10 +7,7 @@ public class CountDuplicatesShould : IClassFixture<CountDuplicatesFixture>
 {
     private readonly CountDuplicatesFixture mockFilesFixture;
 
-    public CountDuplicatesShould(CountDuplicatesFixture mockFilesFixture)
-    {
-        this.mockFilesFixture = mockFilesFixture;
-    }
+    public CountDuplicatesShould(CountDuplicatesFixture mockFilesFixture) => this.mockFilesFixture = mockFilesFixture;
 
     [Fact]
     public async Task ReturnBadRequestWhenNoSearchFolderSpecified()

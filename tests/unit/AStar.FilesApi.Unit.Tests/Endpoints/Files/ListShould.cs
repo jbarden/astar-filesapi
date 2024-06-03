@@ -2,7 +2,7 @@ using AStar.FilesApi.Config;
 using AStar.FilesApi.Models;
 using AStar.FilesApi.Helpers;
 using Microsoft.AspNetCore.Mvc;
-using AStar.Infrastructure.Models;
+using AStar.Web.Domain;
 
 namespace AStar.FilesApi.Endpoints.Files;
 
@@ -11,10 +11,7 @@ public class ListShould : IClassFixture<ListFixture>
     private const int ExpectedResultCountWithDefaultSearchParameters = 10;
     private readonly ListFixture mockFilesFixture;
 
-    public ListShould(ListFixture mockFilesFixture)
-    {
-        this.mockFilesFixture = mockFilesFixture;
-    }
+    public ListShould(ListFixture mockFilesFixture) => this.mockFilesFixture = mockFilesFixture;
 
     [Fact]
     public async Task ReturnBadRequestWhenNoSearchFolderSpecified()

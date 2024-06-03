@@ -7,10 +7,7 @@ public class MarkForMovingShould : IClassFixture<MarkForMovingFixture>
 {
     private readonly MarkForMovingFixture mockFilesFixture;
 
-    public MarkForMovingShould(MarkForMovingFixture mockFilesFixture)
-    {
-        this.mockFilesFixture = mockFilesFixture;
-    }
+    public MarkForMovingShould(MarkForMovingFixture mockFilesFixture) => this.mockFilesFixture = mockFilesFixture;
 
     [Theory]
     [InlineData(" ")]

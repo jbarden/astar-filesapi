@@ -7,10 +7,7 @@ public class UndoMarkForHardDeletionShould : IClassFixture<UndoMarkForHardDeleti
 {
     private readonly UndoMarkForHardDeletionFixture mockFilesFixture;
 
-    public UndoMarkForHardDeletionShould(UndoMarkForHardDeletionFixture mockFilesFixture)
-    {
-        this.mockFilesFixture = mockFilesFixture;
-    }
+    public UndoMarkForHardDeletionShould(UndoMarkForHardDeletionFixture mockFilesFixture) => this.mockFilesFixture = mockFilesFixture;
 
     [Theory]
     [InlineData(" ")]

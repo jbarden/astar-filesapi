@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.Text.Json;
 using AStar.FilesApi.Config;
-using AStar.Infrastructure.Models;
+using AStar.Web.Domain;
 
 namespace AStar.FilesApi.Files;
 

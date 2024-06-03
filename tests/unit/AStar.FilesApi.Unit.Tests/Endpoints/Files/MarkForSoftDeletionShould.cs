@@ -7,10 +7,7 @@ public class MarkForSoftDeletionShould : IClassFixture<MarkForSoftDeletionFixtur
 {
     private readonly MarkForSoftDeletionFixture mockFilesFixture;
 
-    public MarkForSoftDeletionShould(MarkForSoftDeletionFixture mockFilesFixture)
-    {
-        this.mockFilesFixture = mockFilesFixture;
-    }
+    public MarkForSoftDeletionShould(MarkForSoftDeletionFixture mockFilesFixture) => this.mockFilesFixture = mockFilesFixture;
 
     [Theory]
     [InlineData(" ")]
