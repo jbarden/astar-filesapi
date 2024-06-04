@@ -6,7 +6,10 @@ namespace AStar.FilesApi.StartupConfiguration;
 
 public static class Services
 {
+#pragma warning disable IDE0060 // Remove unused parameter
+
     public static IServiceCollection Configure(IServiceCollection services, IConfiguration configuration)
+#pragma warning restore IDE0060 // Remove unused parameter
     {
         var  contextOptions = new DbContextOptionsBuilder<FilesContext>()
             .UseSqlite(configuration.GetConnectionString("FilesDb")!)

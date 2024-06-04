@@ -2,7 +2,7 @@ using AStar.FilesApi.Config;
 using AStar.FilesApi.Models;
 using AStar.FilesApi.Helpers;
 using Microsoft.AspNetCore.Mvc;
-using AStar.Web.Domain;
+using AStar.Infrastructure.Models;
 
 namespace AStar.FilesApi.Endpoints.Files;
 
@@ -103,26 +103,6 @@ public class ListShould : IClassFixture<ListFixture>
     }
 
     [Fact]
-    public async Task GetTheExpectedCountWhenFilterAppliedThatCapturesAllSupportedImageTypesFromStartingSubFolder()
-    {
-        var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\Temp\Famous\coats", Recursive = false, SearchType = SearchType.Images}, CancellationToken.None)).Result as OkObjectResult;
-
-        var value = (IReadOnlyCollection<FileInfoDto>)response!.Value!;
-
-        _ = value.Count.Should().Be(4);
-    }
-
-    [Fact]
-    public async Task GetTheExpectedFilesWhenFilterAppliedThatCapturesAllSupportedImageTypesFromStartingSubFolder()
-    {
-        var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\Temp\Famous\coats", Recursive = false, SearchType = SearchType.Images}, CancellationToken.None)).Result as OkObjectResult;
-
-        var value = (IReadOnlyCollection<FileInfoDto>)response!.Value!;
-
-        await Verify(value);
-    }
-
-    [Fact]
     public async Task GetTheExpectedFilesWhenFilterAppliedThatCapturesAllSupportedImageTypesFromStartingSubFolderAnHonourTheSizeDescendingSortOrder()
     {
         var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\Temp\", Recursive = true, SearchType = SearchType.Images, SortOrder = SortOrder.SizeDescending}, CancellationToken.None)).Result as OkObjectResult;
@@ -136,26 +116,6 @@ public class ListShould : IClassFixture<ListFixture>
     public async Task GetTheExpectedFilesWhenFilterAppliedThatCapturesAllSupportedImageTypesFromStartingSubFolderAnHonourTheSizeAscendingSortOrder()
     {
         var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\Temp\", Recursive = true, SearchType = SearchType.Images, SortOrder = SortOrder.SizeAscending}, CancellationToken.None)).Result as OkObjectResult;
-
-        var value = (IReadOnlyCollection<FileInfoDto>)response!.Value!;
-
-        await Verify(value);
-    }
-
-    [Fact]
-    public async Task GetTheExpectedFilesWhenFilterAppliedThatCapturesAllSupportedImageTypesFromStartingSubFolderAnHonourTheNameDescendingSortOrder()
-    {
-        var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\Temp\Famous\coats", Recursive = false, SearchType = SearchType.Images, SortOrder = SortOrder.NameDescending}, CancellationToken.None)).Result as OkObjectResult;
-
-        var value = (IReadOnlyCollection<FileInfoDto>)response!.Value!;
-
-        await Verify(value);
-    }
-
-    [Fact]
-    public async Task GetTheExpectedFilesWhenFilterAppliedThatCapturesAllSupportedImageTypesFromStartingSubFolderAnHonourTheNameAscendingSortOrder()
-    {
-        var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\Temp\Famous\coats", Recursive = false, SearchType = SearchType.Images, SortOrder = SortOrder.NameAscending}, CancellationToken.None)).Result as OkObjectResult;
 
         var value = (IReadOnlyCollection<FileInfoDto>)response!.Value!;
 

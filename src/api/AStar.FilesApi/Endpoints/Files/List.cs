@@ -47,8 +47,7 @@ public class List(FilesContext context, ILogger<List> logger)
             file.LastViewed = DateTime.UtcNow;
         }
 
-        _ = context.SaveChanges();
-        await Task.Delay(1, cancellationToken);
+        _ = await context.SaveChangesAsync(cancellationToken);
 
         return Ok(fileList);
     }

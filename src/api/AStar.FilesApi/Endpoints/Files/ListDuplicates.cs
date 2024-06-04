@@ -57,8 +57,8 @@ public class ListDuplicates(FilesContext context, ILogger<ListDuplicates> logger
             fileList.Add(new DuplicateGroup() { Group = new() { FileLength = key.FileLength, Width = key.Width, Height = key.Height }, Files = fileDtos });
         }
 
-        _ = context.SaveChanges();
-        await Task.Delay(1, cancellationToken);
+        _ = await context.SaveChangesAsync(cancellationToken);
+
         logger.LogDebug("About to return the results for the {SearchType} search (Total seconds: {TotalSeconds})...{FullParameters}", request.SearchType, stopwatch.Elapsed.Seconds, request);
 
         return Ok(fileList);
