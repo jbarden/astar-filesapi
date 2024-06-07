@@ -2,6 +2,7 @@
 using AStar.Infrastructure.Data;
 using AStar.Utilities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace AStar.FilesApi.Endpoints.Files;
@@ -22,7 +23,7 @@ public class Update(FilesContext context, ILogger<Update> logger) : EndpointBase
     {
         ArgumentNullException.ThrowIfNull(request);
 
-        var specifiedFile = context.Files.FirstOrDefault(file => file.DirectoryName == request.OldDirectoryName && file.FileName == request.FileName);
+        var specifiedFile = await context.Files.FirstOrDefaultAsync(file => file.DirectoryName == request.OldDirectoryName && file.FileName == request.FileName, cancellationToken: cancellationToken);
         var error = string.Empty;
 
         if(specifiedFile != null)
@@ -48,7 +49,7 @@ public class Update(FilesContext context, ILogger<Update> logger) : EndpointBase
                 error = $"The specified file could not be found. File: {request.FileName} in Directory: {request.OldDirectoryName}";
             }
 
-            var targetFile = context.Files.FirstOrDefault(file => file.DirectoryName == newLocation && file.FileName == request.FileName);
+            var targetFile = await context.Files.FirstOrDefaultAsync(file => file.DirectoryName == newLocation && file.FileName == request.FileName, cancellationToken: cancellationToken);
 
             if(targetFile != null)
             {
@@ -56,12 +57,13 @@ public class Update(FilesContext context, ILogger<Update> logger) : EndpointBase
             }
 
             _ = context.Files.Remove(specifiedFile);
-            _ = context.SaveChanges();
-            specifiedFile.NeedsToMove = false;
-            specifiedFile.DetailsLastUpdated = DateTime.UtcNow;
+            _ = await context.SaveChangesAsync(cancellationToken);
+            var fileDetail = await context.FileAccessDetails.FirstAsync(fileDetail => fileDetail.Id == specifiedFile.Id, cancellationToken: cancellationToken);
+            fileDetail.SoftDeletePending = false;
+            fileDetail.DetailsLastUpdated = DateTime.UtcNow;
             specifiedFile.DirectoryName = request.NewDirectoryName;
-            _ = context.Files.Add(specifiedFile);
-            _ = context.SaveChanges();
+            _ = await context.Files.AddAsync(specifiedFile, cancellationToken: cancellationToken);
+            _ = await context.SaveChangesAsync(cancellationToken);
         }
 
         logger.LogDebug("File {FileName} moved to the new {NewDirectory} from {OldDirectory}", request.FileName, request.NewDirectoryName, request.OldDirectoryName);

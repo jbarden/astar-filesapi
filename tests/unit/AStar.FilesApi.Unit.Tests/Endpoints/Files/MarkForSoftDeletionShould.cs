@@ -27,6 +27,6 @@ public class MarkForSoftDeletionShould : IClassFixture<MarkForSoftDeletionFixtur
 
         _ = await mockFilesFixture.SUT.HandleAsync(Path.Combine(testFile.DirectoryName, testFile.FileName)) as OkObjectResult;
 
-        mockFilesFixture.MockFilesContext.Files.Count(file => file.DirectoryName == testFile.DirectoryName && file.FileName == testFile.FileName && file.SoftDeletePending).Should().Be(1);
+        mockFilesFixture.MockFilesContext.Files.Count(file => file.DirectoryName == testFile.DirectoryName && file.FileName == testFile.FileName && file.FileAccessDetail.SoftDeletePending).Should().Be(1);
     }
 }

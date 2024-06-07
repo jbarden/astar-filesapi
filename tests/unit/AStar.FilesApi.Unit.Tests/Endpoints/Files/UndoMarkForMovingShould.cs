@@ -24,11 +24,11 @@ public class UndoMarkForMovingShould : IClassFixture<UndoMarkForMovingFixture>
     public async Task GetTheExpectedCountWhenMarkFileForMovingWasSuccessful()
     {
         var testFile = mockFilesFixture.MockFilesContext.Files.First();
-        testFile.NeedsToMove = true;
-        mockFilesFixture.MockFilesContext.SaveChanges();
+        testFile.FileAccessDetail.MoveRequired = true;
+        await mockFilesFixture.MockFilesContext.SaveChangesAsync();
 
         _ = await mockFilesFixture.SUT.HandleAsync(Path.Combine(testFile.DirectoryName, testFile.FileName)) as OkObjectResult;
 
-        mockFilesFixture.MockFilesContext.Files.Count(file => file.DirectoryName == testFile.DirectoryName && file.FileName == testFile.FileName && file.NeedsToMove).Should().Be(0);
+        mockFilesFixture.MockFilesContext.Files.Count(file => file.DirectoryName == testFile.DirectoryName && file.FileName == testFile.FileName && file.FileAccessDetail.MoveRequired).Should().Be(0);
     }
 }

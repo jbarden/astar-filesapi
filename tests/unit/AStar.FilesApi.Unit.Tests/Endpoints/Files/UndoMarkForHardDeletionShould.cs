@@ -24,11 +24,11 @@ public class UndoMarkForHardDeletionShould : IClassFixture<UndoMarkForHardDeleti
     public async Task GetTheExpectedCountWhenUndoMarkFileForDeletionWasSuccessful()
     {
         var testFile = mockFilesFixture.MockFilesContext.Files.First();
-        testFile.HardDeletePending = true;
-        mockFilesFixture.MockFilesContext.SaveChanges();
+        testFile.FileAccessDetail.HardDeletePending = true;
+        await mockFilesFixture.MockFilesContext.SaveChangesAsync();
 
         _ = await mockFilesFixture.SUT.HandleAsync(Path.Combine(testFile.DirectoryName, testFile.FileName)) as OkObjectResult;
 
-        mockFilesFixture.MockFilesContext.Files.Count(file => file.DirectoryName == testFile.DirectoryName && file.FileName == testFile.FileName && file.HardDeletePending).Should().Be(0);
+        mockFilesFixture.MockFilesContext.Files.Count(file => file.DirectoryName == testFile.DirectoryName && file.FileName == testFile.FileName && file.FileAccessDetail.HardDeletePending).Should().Be(0);
     }
 }

@@ -21,17 +21,17 @@ public class CountShould : IClassFixture<CountFixture>
     [Fact]
     public async Task GetTheExpectedCountWhenFilterAppliedThatCapturesAllFiles()
     {
-        const int FilesNotSoftDeletedOrPendingDeletionCount = 363;
+        const int FilesNotSoftDeletedOrPendingDeletionCount = 248;
 
         var response = (await  mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"c:\", SearchType = SearchType.All})).Result as OkObjectResult;
 
-        _ = ((int)response!.Value!).Should().BeGreaterThanOrEqualTo(FilesNotSoftDeletedOrPendingDeletionCount);
+        _ = ((int)response!.Value!).Should().Be(FilesNotSoftDeletedOrPendingDeletionCount);
     }
 
     [Fact]
     public async Task GetTheExpectedCountWhenFilterAppliedThatCapturesAllImageFiles()
     {
-        const int FilesNotSoftDeletedOrPendingDeletionCount = 265;
+        const int FilesNotSoftDeletedOrPendingDeletionCount = 179;
 
         var response = (await  mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"c:\", SearchType = SearchType.Images})).Result as OkObjectResult;
 
@@ -49,7 +49,7 @@ public class CountShould : IClassFixture<CountFixture>
     [Fact]
     public async Task GetTheExpectedCountWhenFilterAppliedThatTargetsSpecificFolderRecursively()
     {
-        const int FilesNotSoftDeletedOrPendingDeletionCount = 87;
+        const int FilesNotSoftDeletedOrPendingDeletionCount = 57;
         var response = (await  mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\Temp\Famous", Recursive = true})).Result as OkObjectResult;
 
         _ = response!.Value.Should().Be(FilesNotSoftDeletedOrPendingDeletionCount);
@@ -66,7 +66,7 @@ public class CountShould : IClassFixture<CountFixture>
     [Fact]
     public async Task GetTheExpectedCountWhenFilterAppliedThatTargetsSpecificFolderRecursivelyButIncludeSoftDeleted()
     {
-        const int FilesNotSoftDeletedOrPendingDeletionCount = 95;
+        const int FilesNotSoftDeletedOrPendingDeletionCount = 67;
 
         var response = (await  mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\Temp\Famous", Recursive = true, IncludeSoftDeleted = true})).Result as OkObjectResult;
 
@@ -76,7 +76,7 @@ public class CountShould : IClassFixture<CountFixture>
     [Fact]
     public async Task GetTheExpectedCountWhenFilterAppliedThatTargetsSpecificFolderRecursivelyButIncludeMarkedForDeletion()
     {
-        const int FilesNotSoftDeletedOrPendingDeletionCount = 87;
+        const int FilesNotSoftDeletedOrPendingDeletionCount = 83;
 
         var response = (await  mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\Temp\Famous", Recursive = true, IncludeMarkedForDeletion = true})).Result as OkObjectResult;
 

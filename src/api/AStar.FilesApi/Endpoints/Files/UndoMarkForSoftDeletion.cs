@@ -2,6 +2,7 @@
 using AStar.Infrastructure.Data;
 using AStar.Utilities;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Swashbuckle.AspNetCore.Annotations;
 
 namespace AStar.FilesApi.Endpoints.Files;
@@ -30,11 +31,12 @@ public class UndoMarkForSoftDeletion(FilesContext context, ILogger<MarkForSoftDe
         var index = request.LastIndexOf('\\');
         var directory = request[..index];
         var fileName = request[++index..];
-        var specifiedFile = context.Files.FirstOrDefault(file => file.DirectoryName == directory && file.FileName == fileName);
+        var specifiedFile = await context.Files.FirstOrDefaultAsync(file => file.DirectoryName == directory && file.FileName == fileName, cancellationToken: cancellationToken);
         if(specifiedFile != null)
         {
-            specifiedFile.SoftDeletePending = false;
-            _ = context.SaveChanges();
+            var fileDetail = await context.FileAccessDetails.FirstAsync(fileDetail => fileDetail.Id == specifiedFile.Id, cancellationToken: cancellationToken);
+            fileDetail.SoftDeletePending = false;
+            _ = await context.SaveChangesAsync(cancellationToken);
         }
 
         logger.LogDebug("File {FileName} mark for deletion has been undone", specifiedFile);

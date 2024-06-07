@@ -44,7 +44,7 @@ public class ListShould : IClassFixture<ListFixture>
     [Fact]
     public async Task GetTheFullListOfFilesWhenTheFilterAppliedCapturesAllFiles()
     {
-        const int FilesNotSoftDeletedOrPendingDeletionCount = 364;
+        const int FilesNotSoftDeletedOrPendingDeletionCount = 248;
         var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"c:\", SearchType = SearchType.All, ItemsPerPage = 10_000}, CancellationToken.None)).Result as OkObjectResult;
 
         var value = (IReadOnlyCollection<FileInfoDto>)response!.Value!;

@@ -31,11 +31,11 @@ public class ListDuplicatesShould : IClassFixture<ListDuplicatesFixture>
     [Fact]
     public async Task GetTheExpectedSecondPageOfFilesWhenTheFilterApplied()
     {
-        var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"c:\", ItemsPerPage = 20, CurrentPage = 2})).Result as OkObjectResult;
+        var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"c:\", ItemsPerPage = 10, CurrentPage = 2})).Result as OkObjectResult;
 
         var value = (IReadOnlyCollection<DuplicateGroup>)response!.Value!;
 
-        value.Count.Should().Be(16);
+        value.Count.Should().Be(10);
         await Verify(value);
     }
 }

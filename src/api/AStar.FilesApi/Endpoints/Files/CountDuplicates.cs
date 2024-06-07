@@ -33,7 +33,7 @@ public class CountDuplicates(FilesContext context, ILogger<CountDuplicates> logg
 
         if(request.SearchType != SearchType.Duplicates)
         {
-            return BadRequest("Only Duplicate counts are supported by this endpoint, please call the non-duplicate-specific endpoint.");
+            return BadRequest("Only Duplicate Group counts are supported by this endpoint, please call the non-duplicate-specific endpoint.");
         }
 
         var matchingFiles = context.Files

@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using System.Net.Mime;
+using System.Text;
 using Ardalis.ApiEndpoints;
 using AStar.FilesApi.Files;
 using AStar.FilesApi.Models;
@@ -17,6 +18,8 @@ public class List(FilesContext context, ILogger<List> logger)
                     .WithRequest<ListSearchParameters>
                     .WithActionResult<IReadOnlyCollection<FileInfoDto>>
 {
+    [Produces(MediaTypeNames.Application.Json)]
+    [Consumes(MediaTypeNames.Application.Json)]
     [ResponseCache(Duration = 120)]
     [HttpGet("list")]
     [SwaggerOperation(
@@ -44,7 +47,8 @@ public class List(FilesContext context, ILogger<List> logger)
         foreach(var file in files.Skip((request.CurrentPage - 1) * request.ItemsPerPage).Take(request.ItemsPerPage))
         {
             fileList.Add(new FileInfoDto(file));
-            file.LastViewed = DateTime.UtcNow;
+            var fileDetail = await context.FileAccessDetails.FirstAsync(fileDetail => fileDetail.Id == file.Id, cancellationToken: cancellationToken);
+            fileDetail.LastViewed = DateTime.UtcNow;
         }
 
         _ = await context.SaveChangesAsync(cancellationToken);
