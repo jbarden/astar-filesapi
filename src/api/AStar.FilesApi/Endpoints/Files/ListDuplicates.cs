@@ -1,6 +1,5 @@
 ﻿using System.Diagnostics;
 using Ardalis.ApiEndpoints;
-using AStar.FilesApi.Files;
 using AStar.FilesApi.Models;
 using AStar.Infrastructure.Data;
 using AStar.Utilities;

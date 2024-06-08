@@ -5,6 +5,21 @@ namespace AStar.FilesApi.Models;
 
 public class FileAccessDetailDto
 {
+    public FileAccessDetailDto(FileAccessDetail fileAccessDetail)
+    {
+        Id = fileAccessDetail.Id;
+        DetailsLastUpdated = fileAccessDetail.DetailsLastUpdated;
+        LastViewed = fileAccessDetail.LastViewed;
+        SoftDeleted = fileAccessDetail.SoftDeleted;
+        SoftDeletePending = fileAccessDetail.SoftDeletePending;
+        NeedsToMove = fileAccessDetail.MoveRequired;
+        HardDeletePending = fileAccessDetail.HardDeletePending;
+    }
+
+    public FileAccessDetailDto()
+    {
+    }
+
     public int Id { get; set; }
 
     /// <summary>

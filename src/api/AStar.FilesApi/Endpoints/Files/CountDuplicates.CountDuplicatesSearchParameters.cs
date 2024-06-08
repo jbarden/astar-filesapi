@@ -2,7 +2,7 @@
 using System.Text.Json;
 using AStar.FilesApi.Config;
 
-namespace AStar.FilesApi.Files;
+namespace AStar.FilesApi.Endpoints.Files;
 
 public class CountDuplicatesSearchParameters
 {

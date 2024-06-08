@@ -1,4 +1,4 @@
-﻿namespace AStar.FilesApi.Files;
+﻿namespace AStar.FilesApi.Endpoints.Files;
 
 public class FileSizeDto
 {

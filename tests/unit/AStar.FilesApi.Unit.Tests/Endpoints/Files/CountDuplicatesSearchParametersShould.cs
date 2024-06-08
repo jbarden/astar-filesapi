@@ -1,6 +1,4 @@
-﻿using AStar.FilesApi.Files;
-
-namespace AStar.FilesApi.Endpoints.Files;
+﻿namespace AStar.FilesApi.Endpoints.Files;
 
 public class CountDuplicatesSearchParametersShould
 {

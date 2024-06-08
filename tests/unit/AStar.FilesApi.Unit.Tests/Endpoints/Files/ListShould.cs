@@ -1,8 +1,9 @@
 using AStar.FilesApi.Config;
-using AStar.FilesApi.Models;
 using AStar.FilesApi.Helpers;
-using Microsoft.AspNetCore.Mvc;
+using AStar.FilesApi.Models;
 using AStar.Infrastructure.Models;
+
+using Microsoft.AspNetCore.Mvc;
 
 namespace AStar.FilesApi.Endpoints.Files;
 

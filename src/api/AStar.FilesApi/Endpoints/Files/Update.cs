@@ -67,7 +67,6 @@ public class Update(FilesContext context, ILogger<Update> logger) : EndpointBase
         }
 
         logger.LogDebug("File {FileName} moved to the new {NewDirectory} from {OldDirectory}", request.FileName, request.NewDirectoryName, request.OldDirectoryName);
-        await Task.Delay(1, cancellationToken);
 
         return error.IsNotNullOrWhiteSpace()
                         ? BadRequest(error)

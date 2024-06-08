@@ -1,6 +1,4 @@
-﻿using AStar.FilesApi.Models;
-
-namespace AStar.FilesApi.Models;
+﻿namespace AStar.FilesApi.Models;
 
 public class FileInfoDtoShould
 {

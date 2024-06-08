@@ -1,7 +1,5 @@
 ﻿using System.Net.Mime;
-using System.Text;
 using Ardalis.ApiEndpoints;
-using AStar.FilesApi.Files;
 using AStar.FilesApi.Models;
 using AStar.Infrastructure.Data;
 using AStar.Utilities;

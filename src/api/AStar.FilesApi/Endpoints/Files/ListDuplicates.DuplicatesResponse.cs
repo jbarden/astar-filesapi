@@ -1,6 +1,6 @@
 ﻿using AStar.FilesApi.Models;
 
-namespace AStar.FilesApi.Files;
+namespace AStar.FilesApi.Endpoints.Files;
 
 /// <summary>
 /// The <see href="DuplicateGroup"></see> class.

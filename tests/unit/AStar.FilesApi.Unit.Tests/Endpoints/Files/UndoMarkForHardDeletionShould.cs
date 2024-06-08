@@ -9,26 +9,13 @@ public class UndoMarkForHardDeletionShould : IClassFixture<UndoMarkForHardDeleti
 
     public UndoMarkForHardDeletionShould(UndoMarkForHardDeletionFixture mockFilesFixture) => this.mockFilesFixture = mockFilesFixture;
 
-    [Theory]
-    [InlineData(" ")]
-    [InlineData("")]
-    [InlineData("Ssdfsdfsdfsdfdsarch")]
-    public async Task ReturnBadRequestWhenNoValidPathSpecified(string fileWithPath)
-    {
-        var response = await mockFilesFixture.SUT.HandleAsync(fileWithPath) as BadRequestObjectResult;
-
-        _ = response?.Value.Should().Be("A valid file with path must be specified.");
-    }
-
     [Fact]
     public async Task GetTheExpectedCountWhenUndoMarkFileForDeletionWasSuccessful()
     {
-        var testFile = mockFilesFixture.MockFilesContext.Files.First();
-        testFile.FileAccessDetail.HardDeletePending = true;
-        await mockFilesFixture.MockFilesContext.SaveChangesAsync();
+        var testFile = mockFilesFixture.MockFilesContext.FileAccessDetails.First(file=>file.HardDeletePending);
 
-        _ = await mockFilesFixture.SUT.HandleAsync(Path.Combine(testFile.DirectoryName, testFile.FileName)) as OkObjectResult;
+        _ = await mockFilesFixture.SUT.HandleAsync(testFile.Id) as OkObjectResult;
 
-        mockFilesFixture.MockFilesContext.Files.Count(file => file.DirectoryName == testFile.DirectoryName && file.FileName == testFile.FileName && file.FileAccessDetail.HardDeletePending).Should().Be(0);
+        mockFilesFixture.MockFilesContext.FileAccessDetails.Count(file => file.Id == testFile.Id && file.HardDeletePending).Should().Be(0);
     }
 }

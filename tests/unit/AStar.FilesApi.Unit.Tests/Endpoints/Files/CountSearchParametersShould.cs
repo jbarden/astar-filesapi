@@ -1,5 +1,4 @@
 ﻿using AStar.FilesApi.Config;
-using AStar.FilesApi.Files;
 
 namespace AStar.FilesApi.Endpoints.Files;
 

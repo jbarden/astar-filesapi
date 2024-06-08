@@ -3,7 +3,7 @@ using System.Text.Json;
 using AStar.FilesApi.Config;
 using AStar.Infrastructure.Models;
 
-namespace AStar.FilesApi.Files;
+namespace AStar.FilesApi.Endpoints.Files;
 
 public class ListSearchParameters
 {
