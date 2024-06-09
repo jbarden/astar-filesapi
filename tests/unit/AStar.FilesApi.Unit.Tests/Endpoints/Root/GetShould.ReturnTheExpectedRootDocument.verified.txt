@@ -15,6 +15,16 @@
     Method: GET
   },
   {
+    Rel: access-detail,
+    Href: api/files/access-detail,
+    Method: GET
+  },
+  {
+    Rel: detail,
+    Href: api/files/detail,
+    Method: GET
+  },
+  {
     Rel: list,
     Href: api/files/list,
     Method: GET
@@ -27,32 +37,32 @@
   {
     Rel: self,
     Href: api/files/mark-for-hard-deletion,
-    Method: DELETE
+    Method: PUT
   },
   {
     Rel: self,
     Href: api/files/mark-for-moving,
-    Method: DELETE
+    Method: PUT
   },
   {
     Rel: self,
     Href: api/files/mark-for-soft-deletion,
-    Method: DELETE
+    Method: PUT
   },
   {
     Rel: self,
     Href: api/files/undo-mark-for-hard-deletion,
-    Method: DELETE
+    Method: PUT
   },
   {
     Rel: self,
     Href: api/files/undo-mark-for-moving,
-    Method: DELETE
+    Method: PUT
   },
   {
     Rel: self,
     Href: api/files/undo-mark-for-soft-deletion,
-    Method: DELETE
+    Method: PUT
   },
   {
     Rel: self,

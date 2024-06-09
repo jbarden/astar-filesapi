@@ -12,11 +12,14 @@ public class FileInfoDto
         Height = fileDetail.Height;
         Width = fileDetail.Width;
         Size = fileDetail.FileSize;
+        Id = fileDetail.Id;
     }
 
     public FileInfoDto()
     {
     }
+
+    public int Id { get; set; }
 
     public string Name { get; set; } = string.Empty;
 

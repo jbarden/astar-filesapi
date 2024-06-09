@@ -1,5 +1,6 @@
 ﻿[
   {
+    Id: 324,
     Name: favicon.png,
     FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\wwwroot\favicon.png,
     Size: 7074,
@@ -10,6 +11,7 @@
     HardDeletePending: false
   },
   {
+    Id: 128,
     Name: Sam - 12 weeks.jpg,
     FullName: c:\temp\Home\earlydays\Sam - 12 weeks.jpg,
     Size: 34219,
@@ -20,6 +22,7 @@
     HardDeletePending: false
   },
   {
+    Id: 62,
     Name: A-0101.JPG,
     FullName: c:\temp\M Day 2010\A-0101.JPG,
     Size: 55772,
@@ -30,6 +33,7 @@
     HardDeletePending: false
   },
   {
+    Id: 23,
     Name: 3aE.JPG,
     FullName: c:\temp\1st Year Frame\3aE.JPG,
     Size: 57995,
@@ -40,6 +44,7 @@
     HardDeletePending: false
   },
   {
+    Id: 13,
     Name: 0.jpg,
     FullName: c:\temp\1st Year Frame\0.jpg,
     Size: 76380,
@@ -50,6 +55,7 @@
     HardDeletePending: false
   },
   {
+    Id: 139,
     Name: 20080325 008.jpg,
     FullName: c:\temp\Home\month01\20080325 008.jpg,
     Size: 130891,
@@ -60,6 +66,7 @@
     HardDeletePending: false
   },
   {
+    Id: 42,
     Name: A-0001.JPG,
     FullName: c:\temp\M Day 2010\A-0001.JPG,
     Size: 132311,
@@ -70,6 +77,7 @@
     HardDeletePending: false
   },
   {
+    Id: 24,
     Name: 3E.JPG,
     FullName: c:\temp\1st Year Frame\3E.JPG,
     Size: 140283,
@@ -80,6 +88,7 @@
     HardDeletePending: false
   },
   {
+    Id: 27,
     Name: 6.jpg,
     FullName: c:\temp\1st Year Frame\6.jpg,
     Size: 162205,
@@ -90,6 +99,7 @@
     HardDeletePending: false
   },
   {
+    Id: 184,
     Name: 20080523 026.jpg,
     FullName: c:\temp\Home\month03\20080523 026.jpg,
     Size: 194138,

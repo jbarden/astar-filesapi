@@ -5,6 +5,7 @@
     },
     Files: [
       {
+        Id: 117,
         Name: wallhaven-p9xoje.jpg,
         FullName: c:\temp\Famous\Sara Jean Underwood\wallhaven-p9xoje.jpg,
         Size: 2411003,
@@ -15,6 +16,7 @@
         HardDeletePending: false
       },
       {
+        Id: 288,
         Name: wallhaven-p9xoje.jpg,
         FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\wallhaven-p9xoje.jpg,
         Size: 2411003,
@@ -32,6 +34,7 @@
     },
     Files: [
       {
+        Id: 114,
         Name: wallhaven-jxoekq.jpg,
         FullName: c:\temp\Famous\Sara Jean Underwood\wallhaven-jxoekq.jpg,
         Size: 2384565,
@@ -42,6 +45,7 @@
         HardDeletePending: false
       },
       {
+        Id: 285,
         Name: wallhaven-jxoekq.jpg,
         FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\wallhaven-jxoekq.jpg,
         Size: 2384565,
@@ -52,6 +56,7 @@
         HardDeletePending: false
       },
       {
+        Id: 302,
         Name: wallhaven-jxoekq.jpg,
         FullName: c:\temp\Famous\Sara Jean Underwood\Sara Jean Underwood - Copy\wallhaven-jxoekq.jpg,
         Size: 2384565,
@@ -69,6 +74,7 @@
     },
     Files: [
       {
+        Id: 112,
         Name: wallhaven-851gd2.jpg,
         FullName: c:\temp\Famous\Sara Jean Underwood\wallhaven-851gd2.jpg,
         Size: 2299644,
@@ -79,6 +85,7 @@
         HardDeletePending: false
       },
       {
+        Id: 283,
         Name: wallhaven-851gd2.jpg,
         FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\wallhaven-851gd2.jpg,
         Size: 2299644,
@@ -89,6 +96,7 @@
         HardDeletePending: false
       },
       {
+        Id: 300,
         Name: wallhaven-851gd2.jpg,
         FullName: c:\temp\Famous\Sara Jean Underwood\Sara Jean Underwood - Copy\wallhaven-851gd2.jpg,
         Size: 2299644,
@@ -106,6 +114,7 @@
     },
     Files: [
       {
+        Id: 287,
         Name: wallhaven-l87ykr.jpg,
         FullName: c:\temp\Famous\actress\Sara Jean Underwood - Copy - Copy\wallhaven-l87ykr.jpg,
         Size: 2166448,
@@ -116,6 +125,7 @@
         HardDeletePending: false
       },
       {
+        Id: 304,
         Name: wallhaven-l87ykr.jpg,
         FullName: c:\temp\Famous\Sara Jean Underwood\Sara Jean Underwood - Copy\wallhaven-l87ykr.jpg,
         Size: 2166448,
@@ -133,6 +143,7 @@
     },
     Files: [
       {
+        Id: 2,
         Name: .editorconfig2,
         FullName: c:\temp\.editorconfig2,
         Size: 12756,
@@ -143,6 +154,7 @@
         HardDeletePending: false
       },
       {
+        Id: 3,
         Name: .editorconfig3,
         FullName: c:\temp\.editorconfig3,
         Size: 12756,
@@ -153,6 +165,7 @@
         HardDeletePending: false
       },
       {
+        Id: 34,
         Name: .editorconfig,
         FullName: c:\temp\Famous\.editorconfig,
         Size: 12756,
@@ -170,6 +183,7 @@
     },
     Files: [
       {
+        Id: 365,
         Name: AStar.Web.UI.GeneratedMSBuildEditorConfig.editorconfig,
         FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net7.0\AStar.Web.UI.GeneratedMSBuildEditorConfig.editorconfig,
         Size: 2625,
@@ -180,6 +194,7 @@
         HardDeletePending: false
       },
       {
+        Id: 380,
         Name: AStar.Web.UI.GeneratedMSBuildEditorConfig.editorconfig,
         FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net8.0\AStar.Web.UI.GeneratedMSBuildEditorConfig.editorconfig,
         Size: 2625,
@@ -197,6 +212,7 @@
     },
     Files: [
       {
+        Id: 4,
         Name: .gitattributes,
         FullName: c:\temp\.gitattributes,
         Size: 2581,
@@ -207,6 +223,7 @@
         HardDeletePending: false
       },
       {
+        Id: 35,
         Name: .gitattributes,
         FullName: c:\temp\Famous\.gitattributes,
         Size: 2581,
@@ -224,6 +241,7 @@
     },
     Files: [
       {
+        Id: 12,
         Name: test.txt,
         FullName: c:\temp\test.txt,
         Size: 2185,
@@ -234,6 +252,7 @@
         HardDeletePending: false
       },
       {
+        Id: 40,
         Name: test.txt,
         FullName: c:\temp\Famous\test.txt,
         Size: 2185,
@@ -251,6 +270,7 @@
     },
     Files: [
       {
+        Id: 362,
         Name: AStar.Web.UI.AssemblyInfoInputs.cache,
         FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net7.0\AStar.Web.UI.AssemblyInfoInputs.cache,
         Size: 66,
@@ -261,6 +281,7 @@
         HardDeletePending: false
       },
       {
+        Id: 367,
         Name: AStar.Web.UI.RazorAssemblyInfo.cache,
         FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net7.0\AStar.Web.UI.RazorAssemblyInfo.cache,
         Size: 66,
@@ -271,6 +292,7 @@
         HardDeletePending: false
       },
       {
+        Id: 373,
         Name: AStar.Web.UI.AssemblyInfoInputs.cache,
         FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net8.0\AStar.Web.UI.AssemblyInfoInputs.cache,
         Size: 66,
@@ -286,6 +308,7 @@
     Group: {},
     Files: [
       {
+        Id: 349,
         Name: read.lock,
         FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\.vs\AStar.Web.UI\FileContentIndex\read.lock,
         Extension: lock,
@@ -295,6 +318,7 @@
         HardDeletePending: false
       },
       {
+        Id: 383,
         Name: AStar.Web.UI.MvcApplicationPartsAssemblyInfo.cache,
         FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net8.0\AStar.Web.UI.MvcApplicationPartsAssemblyInfo.cache,
         Extension: cache,
