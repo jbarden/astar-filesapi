@@ -9,7 +9,7 @@ namespace AStar.FilesApi.Endpoints.Files;
 [Route("api/files")]
 public class UndoMarkForMoving(FilesContext context, ILogger<UndoMarkForMoving> logger)
             : EndpointBaseAsync
-                    .WithRequest<int>
+                    .WithRequest<Request>
                     .WithActionResult
 {
     [HttpPut("undo-mark-for-moving")]
@@ -19,17 +19,21 @@ public class UndoMarkForMoving(FilesContext context, ILogger<UndoMarkForMoving> 
         OperationId = "Files_UndoMarkForMoving",
         Tags = ["Files"])
 ]
-    public override async Task<ActionResult> HandleAsync(int request, CancellationToken cancellationToken = default)
+    public override async Task<ActionResult> HandleAsync(Request request, CancellationToken cancellationToken = default)
     {
-        var specifiedFile = await context.FileAccessDetails.FirstOrDefaultAsync(file => file.Id == request, cancellationToken: cancellationToken);
+        var specifiedFile = await context.FileAccessDetails.FirstOrDefaultAsync(file => file.Id == request.Id, cancellationToken: cancellationToken);
         if(specifiedFile != null)
         {
             specifiedFile.MoveRequired = false;
             _ = await context.SaveChangesAsync(cancellationToken);
+
+            logger.LogDebug("File {FileName} mark for moving has been undonw", request);
+
+            return NoContent();
         }
 
-        logger.LogDebug("File {FileName} marked for deletion", request);
+        logger.LogDebug("File {FileName} could not be found - undo mark for moving cannot be done", request);
 
-        return NoContent();
+        return NotFound();
     }
 }

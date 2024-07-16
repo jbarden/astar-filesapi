@@ -9,7 +9,7 @@ namespace AStar.FilesApi.Endpoints.Files;
 [Route("api/files")]
 public class MarkForSoftDeletion(FilesContext context, ILogger<MarkForSoftDeletion> logger)
             : EndpointBaseAsync
-                    .WithRequest<int>
+                    .WithRequest<Request>
                     .WithActionResult
 {
     [HttpPut("mark-for-soft-deletion")]
@@ -19,17 +19,20 @@ public class MarkForSoftDeletion(FilesContext context, ILogger<MarkForSoftDeleti
         OperationId = "Files_MarkForSoftDeletion",
         Tags = ["Files"])
 ]
-    public override async Task<ActionResult> HandleAsync(int request, CancellationToken cancellationToken = default)
+    public override async Task<ActionResult> HandleAsync(Request request, CancellationToken cancellationToken = default)
     {
-        var specifiedFile = await context.FileAccessDetails.FirstOrDefaultAsync(file => file.Id == request, cancellationToken: cancellationToken);
+        var specifiedFile = await context.FileAccessDetails.FirstOrDefaultAsync(file => file.Id == request.Id, cancellationToken: cancellationToken);
         if(specifiedFile != null)
         {
             specifiedFile.SoftDeletePending = true;
             _ = await context.SaveChangesAsync(cancellationToken);
+            logger.LogDebug("File {FileName} marked for soft deletion", request);
+
+            return NoContent();
         }
 
-        logger.LogDebug("File {FileName} marked for deletion", request);
+        logger.LogDebug("File {FileName} could not be found - mark for soft deletion cannot be performed", request);
 
-        return NoContent();
+        return NotFound();
     }
 }

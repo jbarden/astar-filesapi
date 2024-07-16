@@ -8,13 +8,9 @@ public class MarkForMovingFixture : IDisposable
 {
     private bool disposedValue;
 
-    public MarkForMovingFixture()
-    {
-        MockFilesContext = new MockFilesContext().CreateContext();
-        SUT = new MarkForMoving(MockFilesContext, NullLogger<MarkForMoving>.Instance);
-    }
+    public MarkForMovingFixture() => SUT = new MarkForMoving(MockFilesContext, NullLogger<MarkForMoving>.Instance);
 
-    public FilesContext MockFilesContext { get; }
+    public FilesContext MockFilesContext => Helpers.MockFilesContext.CreateContext();
 
     public MarkForMoving SUT { get; }
 

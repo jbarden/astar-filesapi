@@ -22,6 +22,8 @@ public class Update(FilesContext context, ILogger<Update> logger) : EndpointBase
     public override async Task<ActionResult> HandleAsync(DirectoryChangeRequest request, CancellationToken cancellationToken = default)
     {
         ArgumentNullException.ThrowIfNull(request);
+        request = UpdateOldDirectoryName(request);
+        request = UpdateNewDirectoryName(request);
 
         var specifiedFile = await context.Files.FirstOrDefaultAsync(file => file.DirectoryName == request.OldDirectoryName && file.FileName == request.FileName, cancellationToken: cancellationToken);
         var error = string.Empty;
@@ -32,6 +34,7 @@ public class Update(FilesContext context, ILogger<Update> logger) : EndpointBase
 
             try
             {
+                _ = Directory.CreateDirectory(request.NewDirectoryName);
                 var newNameAndLocation = Path.Combine(newLocation, request.FileName);
                 if(System.IO.File.Exists(specifiedFile.FullNameWithPath))
                 {
@@ -66,10 +69,40 @@ public class Update(FilesContext context, ILogger<Update> logger) : EndpointBase
             _ = await context.SaveChangesAsync(cancellationToken);
         }
 
-        logger.LogDebug("File {FileName} moved to the new {NewDirectory} from {OldDirectory}", request.FileName, request.NewDirectoryName, request.OldDirectoryName);
+        logger.LogDebug("File {FileName} was moved to the new {NewDirectory} directory from the {OldDirectory} directory", request.FileName, request.NewDirectoryName, request.OldDirectoryName);
 
         return error.IsNotNullOrWhiteSpace()
                         ? BadRequest(error)
                         : NoContent();
+    }
+
+    private static DirectoryChangeRequest UpdateNewDirectoryName(DirectoryChangeRequest request)
+    {
+        if(request.NewDirectoryName.EndsWith('\\'))
+        {
+            request.NewDirectoryName = request.NewDirectoryName.Remove(request.NewDirectoryName.Length - 1);
+        }
+
+        if(request.NewDirectoryName.EndsWith('\\'))
+        {
+            request.NewDirectoryName = request.NewDirectoryName.Remove(request.NewDirectoryName.Length - 1);
+        }
+
+        return request;
+    }
+
+    private static DirectoryChangeRequest UpdateOldDirectoryName(DirectoryChangeRequest request)
+    {
+        if(request.OldDirectoryName.EndsWith('\\'))
+        {
+            request.OldDirectoryName = request.OldDirectoryName.Remove(request.OldDirectoryName.Length - 1);
+        }
+
+        if(request.OldDirectoryName.EndsWith('\\'))
+        {
+            request.OldDirectoryName = request.OldDirectoryName.Remove(request.OldDirectoryName.Length - 1);
+        }
+
+        return request;
     }
 }

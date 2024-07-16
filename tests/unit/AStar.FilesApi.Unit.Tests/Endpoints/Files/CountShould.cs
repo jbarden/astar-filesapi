@@ -50,7 +50,7 @@ public class CountShould : IClassFixture<CountFixture>
     public async Task GetTheExpectedCountWhenFilterAppliedThatTargetsSpecificFolderRecursively()
     {
         const int FilesNotSoftDeletedOrPendingDeletionCount = 57;
-        var response = (await  mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\Temp\Famous", Recursive = true})).Result as OkObjectResult;
+        var response = (await  mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"c:\temp\AI", Recursive = true})).Result as OkObjectResult;
 
         _ = response!.Value.Should().Be(FilesNotSoftDeletedOrPendingDeletionCount);
     }
@@ -58,7 +58,7 @@ public class CountShould : IClassFixture<CountFixture>
     [Fact]
     public async Task ReturnBadRequestForDuplicates()
     {
-        var response = (await  mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\", Recursive = true, SearchType = SearchType.Duplicates})).Result as BadRequestObjectResult;
+        var response = (await  mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"c:\", Recursive = true, SearchType = SearchType.Duplicates})).Result as BadRequestObjectResult;
 
         _ = response!.Value.Should().Be("Duplicate searches are not supported by this endpoint, please call the duplicate-specific endpoint.");
     }
@@ -68,7 +68,7 @@ public class CountShould : IClassFixture<CountFixture>
     {
         const int FilesNotSoftDeletedOrPendingDeletionCount = 67;
 
-        var response = (await  mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\Temp\Famous", Recursive = true, IncludeSoftDeleted = true})).Result as OkObjectResult;
+        var response = (await  mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"c:\temp\AI", Recursive = true, IncludeSoftDeleted = true})).Result as OkObjectResult;
 
         _ = response!.Value.Should().Be(FilesNotSoftDeletedOrPendingDeletionCount);
     }
@@ -78,7 +78,7 @@ public class CountShould : IClassFixture<CountFixture>
     {
         const int FilesNotSoftDeletedOrPendingDeletionCount = 83;
 
-        var response = (await  mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\Temp\Famous", Recursive = true, IncludeMarkedForDeletion = true})).Result as OkObjectResult;
+        var response = (await  mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"c:\temp\AI", Recursive = true, IncludeMarkedForDeletion = true})).Result as OkObjectResult;
 
         _ = response!.Value.Should().Be(FilesNotSoftDeletedOrPendingDeletionCount);
     }
@@ -88,7 +88,7 @@ public class CountShould : IClassFixture<CountFixture>
     {
         const int FilesNotSoftDeletedOrPendingDeletionCount = 95;
 
-        var response = (await  mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\Temp\Famous", Recursive = true, IncludeSoftDeleted = true, IncludeMarkedForDeletion = true})).Result as OkObjectResult;
+        var response = (await  mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"c:\temp\AI", Recursive = true, IncludeSoftDeleted = true, IncludeMarkedForDeletion = true})).Result as OkObjectResult;
 
         _ = response!.Value.Should().Be(FilesNotSoftDeletedOrPendingDeletionCount);
     }

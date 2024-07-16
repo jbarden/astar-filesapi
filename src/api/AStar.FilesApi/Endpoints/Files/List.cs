@@ -4,7 +4,6 @@ using AStar.FilesApi.Models;
 using AStar.Infrastructure.Data;
 using AStar.Utilities;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Swashbuckle.AspNetCore.Annotations;
 using static AStar.Infrastructure.EnumerableExtensions;
 
@@ -45,8 +44,6 @@ public class List(FilesContext context, ILogger<List> logger)
         foreach(var file in files.Skip((request.CurrentPage - 1) * request.ItemsPerPage).Take(request.ItemsPerPage))
         {
             fileList.Add(new FileInfoDto(file));
-            var fileDetail = await context.FileAccessDetails.FirstAsync(fileDetail => fileDetail.Id == file.Id, cancellationToken: cancellationToken);
-            fileDetail.LastViewed = DateTime.UtcNow;
         }
 
         _ = await context.SaveChangesAsync(cancellationToken);

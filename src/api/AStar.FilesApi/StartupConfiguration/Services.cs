@@ -8,11 +8,7 @@ public static class Services
 {
     public static IServiceCollection Configure(IServiceCollection services, IConfiguration configuration)
     {
-        var  contextOptions = new DbContextOptionsBuilder<FilesContext>()
-            .UseSqlite(configuration.GetConnectionString("FilesDb")!)
-            .Options;
-
-        _ = services.AddScoped(_ => new FilesContext(contextOptions));
+        _ = services.AddScoped(_ => new FilesContext(new() { Value = configuration.GetConnectionString("SqlServer")! }, new() { EnableLogging = false, IncludeSensitiveData = false, InMemory = false }));
         _ = services.AddSingleton<IFileSystem, FileSystem>();
 
         var sp = services.BuildServiceProvider();

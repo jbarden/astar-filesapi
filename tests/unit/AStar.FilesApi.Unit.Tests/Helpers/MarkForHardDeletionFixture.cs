@@ -8,13 +8,9 @@ public class MarkForHardDeletionFixture : IDisposable
 {
     private bool disposedValue;
 
-    public MarkForHardDeletionFixture()
-    {
-        MockFilesContext = new MockFilesContext().CreateContext();
-        SUT = new MarkForHardDeletion(MockFilesContext, NullLogger<MarkForHardDeletion>.Instance);
-    }
+    public MarkForHardDeletionFixture() => SUT = new MarkForHardDeletion(MockFilesContext, NullLogger<MarkForHardDeletion>.Instance);
 
-    public FilesContext MockFilesContext { get; }
+    public FilesContext MockFilesContext => Helpers.MockFilesContext.CreateContext();
 
     public MarkForHardDeletion SUT { get; }
 

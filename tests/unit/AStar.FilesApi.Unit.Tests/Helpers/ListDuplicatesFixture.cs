@@ -8,13 +8,9 @@ public class ListDuplicatesFixture : IDisposable
 {
     private bool disposedValue;
 
-    public ListDuplicatesFixture()
-    {
-        MockFilesContext = new MockFilesContext().CreateContext();
-        SUT = new ListDuplicates(MockFilesContext, NullLogger<ListDuplicates>.Instance);
-    }
+    public ListDuplicatesFixture() => SUT = new ListDuplicates(MockFilesContext, NullLogger<ListDuplicates>.Instance);
 
-    public FilesContext MockFilesContext { get; }
+    public FilesContext MockFilesContext => Helpers.MockFilesContext.CreateContext();
 
     public ListDuplicates SUT { get; }
 

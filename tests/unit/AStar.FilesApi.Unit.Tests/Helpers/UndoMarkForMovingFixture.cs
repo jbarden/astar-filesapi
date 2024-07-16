@@ -8,13 +8,9 @@ public class UndoMarkForMovingFixture : IDisposable
 {
     private bool disposedValue;
 
-    public UndoMarkForMovingFixture()
-    {
-        MockFilesContext = new MockFilesContext().CreateContext();
-        SUT = new UndoMarkForMoving(MockFilesContext, NullLogger<UndoMarkForMoving>.Instance);
-    }
+    public UndoMarkForMovingFixture() => SUT = new UndoMarkForMoving(MockFilesContext, NullLogger<UndoMarkForMoving>.Instance);
 
-    public FilesContext MockFilesContext { get; }
+    public FilesContext MockFilesContext => Helpers.MockFilesContext.CreateContext();
 
     public UndoMarkForMoving SUT { get; }
 

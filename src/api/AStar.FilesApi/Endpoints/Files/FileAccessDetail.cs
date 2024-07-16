@@ -10,7 +10,7 @@ namespace AStar.FilesApi.Endpoints.Files;
 [Route("api/files")]
 public class FileAccessDetail(FilesContext context, ILogger<MarkForHardDeletion> logger)
             : EndpointBaseAsync
-                    .WithRequest<int>
+                    .WithRequest<Guid>
                     .WithActionResult<FileAccessDetailDto>
 {
     [HttpGet("access-detail")]
@@ -20,12 +20,12 @@ public class FileAccessDetail(FilesContext context, ILogger<MarkForHardDeletion>
         OperationId = "File_Detail",
         Tags = ["Files"])
 ]
-    public override async Task<ActionResult<FileAccessDetailDto>> HandleAsync(int request, CancellationToken cancellationToken = default)
+    public override async Task<ActionResult<FileAccessDetailDto>> HandleAsync(Guid request, CancellationToken cancellationToken = default)
     {
-        var fileAccessDetail = await context.FileAccessDetails.SingleOrDefaultAsync(file => file.Id == request, cancellationToken: cancellationToken);
-        if(fileAccessDetail != null)
+        var file = await context.Files.Include(file => file.FileAccessDetail).SingleOrDefaultAsync(file => file.Id == request, cancellationToken: cancellationToken);
+        if(file != null)
         {
-            return Ok(new FileAccessDetailDto(fileAccessDetail));
+            return Ok(new FileAccessDetailDto(file.FileAccessDetail));
         }
 
         logger.LogDebug("File Access Details for FileId: {FileId} could not be found", request);

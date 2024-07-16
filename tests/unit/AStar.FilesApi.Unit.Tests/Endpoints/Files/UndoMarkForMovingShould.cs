@@ -16,7 +16,7 @@ public class UndoMarkForMovingShould : IClassFixture<UndoMarkForMovingFixture>
         testFile.MoveRequired = true;
         _ = await mockFilesFixture.MockFilesContext.SaveChangesAsync();
 
-        _ = await mockFilesFixture.SUT.HandleAsync(testFile.Id) as OkObjectResult;
+        _ = await mockFilesFixture.SUT.HandleAsync(new() { Id = testFile.Id }) as OkObjectResult;
 
         mockFilesFixture.MockFilesContext.FileAccessDetails.Count(file => file.Id == testFile.Id && file.MoveRequired).Should().Be(0);
     }

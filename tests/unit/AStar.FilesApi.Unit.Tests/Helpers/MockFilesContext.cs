@@ -1,38 +1,31 @@
 ﻿using System.Text.Json;
 using AStar.Infrastructure.Data;
 using AStar.Infrastructure.Models;
-using Microsoft.Data.Sqlite;
-using Microsoft.EntityFrameworkCore;
 
 namespace AStar.FilesApi.Helpers;
 
 public class MockFilesContext : IDisposable
 {
-    private readonly SqliteConnection connection;
-    private readonly DbContextOptions<FilesContext> contextOptions;
+    private static readonly FilesContext Context = new(new() { Value = "Filename=:memory:" }, new() { InMemory = true });
+
     private bool disposedValue;
 
     public MockFilesContext()
     {
-        // Create and open a connection. This creates the SQLite in-memory database, which will persist until the connection is closed at the end of the test (see Dispose below).
-        connection = new SqliteConnection("Filename=:memory:");
-        connection.Open();
-
-        // These options will be used by the context instances in this test suite, including the connection opened above.
-        contextOptions = new DbContextOptionsBuilder<FilesContext>()
-            .UseSqlite(connection)
-            .Options;
-
-        // Create the schema and seed some data
-        using var context = new FilesContext(contextOptions);
-
-        _ = context.Database.EnsureCreated();
-
-        AddMockFiles(context);
-        _ = context.SaveChanges();
+        _ = Context.Database.EnsureCreated();
+        Console.WriteLine(Context.Files.Count());
+        AddMockFiles(Context);
+        _ = Context.SaveChanges();
     }
 
-    public FilesContext CreateContext() => new(contextOptions);
+    public static FilesContext CreateContext()
+    {
+        _ = Context.Database.EnsureCreated();
+        Console.WriteLine(Context.Files.Count());
+        AddMockFiles(Context);
+        _ = Context.SaveChanges();
+        return Context;
+    }
 
     public void Dispose()
     {
@@ -47,7 +40,7 @@ public class MockFilesContext : IDisposable
         {
             if(disposing)
             {
-                connection.Dispose();
+                Context.Dispose();
             }
 
             disposedValue = true;
@@ -69,5 +62,7 @@ public class MockFilesContext : IDisposable
                 mockFilesContext.SaveChanges();
             }
         }
+
+        JsonSerializer.Serialize(mockFilesContext.Files);
     }
 }

@@ -8,13 +8,9 @@ public class UndoMarkForHardDeletionFixture : IDisposable
 {
     private bool disposedValue;
 
-    public UndoMarkForHardDeletionFixture()
-    {
-        MockFilesContext = new MockFilesContext().CreateContext();
-        SUT = new UndoMarkForHardDeletion(MockFilesContext, NullLogger<UndoMarkForHardDeletion>.Instance);
-    }
+    public UndoMarkForHardDeletionFixture() => SUT = new UndoMarkForHardDeletion(MockFilesContext, NullLogger<UndoMarkForHardDeletion>.Instance);
 
-    public FilesContext MockFilesContext { get; }
+    public FilesContext MockFilesContext => Helpers.MockFilesContext.CreateContext();
 
     public UndoMarkForHardDeletion SUT { get; }
 

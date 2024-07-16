@@ -8,13 +8,9 @@ public class CountFixture : IDisposable
 {
     private bool disposedValue;
 
-    public CountFixture()
-    {
-        MockFilesContext = new MockFilesContext().CreateContext();
-        SUT = new Count(MockFilesContext, NullLogger<Count>.Instance);
-    }
+    public CountFixture() => SUT = new Count(MockFilesContext, NullLogger<Count>.Instance);
 
-    public FilesContext MockFilesContext { get; }
+    public FilesContext MockFilesContext => Helpers.MockFilesContext.CreateContext();
 
     public Count SUT { get; }
 

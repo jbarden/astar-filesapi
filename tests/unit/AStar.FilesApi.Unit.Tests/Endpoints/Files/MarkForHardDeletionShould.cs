@@ -14,7 +14,7 @@ public class MarkForHardDeletionShould : IClassFixture<MarkForHardDeletionFixtur
     {
         var testFile = mockFilesFixture.MockFilesContext.FileAccessDetails.First(file=>!file.HardDeletePending);
 
-        _ = await mockFilesFixture.SUT.HandleAsync(testFile.Id) as OkObjectResult;
+        _ = await mockFilesFixture.SUT.HandleAsync(new() { Id = testFile.Id }) as OkObjectResult;
 
         mockFilesFixture.MockFilesContext.FileAccessDetails.Count(file => file.Id == testFile.Id && file.HardDeletePending).Should().Be(1);
     }

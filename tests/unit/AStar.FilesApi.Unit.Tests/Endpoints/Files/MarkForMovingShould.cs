@@ -14,7 +14,7 @@ public class MarkForMovingShould : IClassFixture<MarkForMovingFixture>
     {
         var testFile = mockFilesFixture.MockFilesContext.FileAccessDetails.First(file=>!file.MoveRequired);
 
-        _ = await mockFilesFixture.SUT.HandleAsync(testFile.Id) as OkObjectResult;
+        _ = await mockFilesFixture.SUT.HandleAsync(new() { Id = testFile.Id }) as OkObjectResult;
 
         mockFilesFixture.MockFilesContext.FileAccessDetails.Count(file => file.Id == testFile.Id && file.MoveRequired).Should().Be(1);
     }

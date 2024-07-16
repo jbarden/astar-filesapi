@@ -8,13 +8,9 @@ public class UndoMarkForSoftDeletionFixture : IDisposable
 {
     private bool disposedValue;
 
-    public UndoMarkForSoftDeletionFixture()
-    {
-        MockFilesContext = new MockFilesContext().CreateContext();
-        SUT = new UndoMarkForSoftDeletion(MockFilesContext, NullLogger<MarkForSoftDeletion>.Instance);
-    }
+    public UndoMarkForSoftDeletionFixture() => SUT = new UndoMarkForSoftDeletion(MockFilesContext!, NullLogger<MarkForSoftDeletion>.Instance);
 
-    public FilesContext MockFilesContext { get; }
+    public FilesContext MockFilesContext => Helpers.MockFilesContext.CreateContext();
 
     public UndoMarkForSoftDeletion SUT { get; }
 

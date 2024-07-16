@@ -4,7 +4,6 @@ using AStar.FilesApi.Models;
 using AStar.Infrastructure.Data;
 using AStar.Utilities;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
 using Swashbuckle.AspNetCore.Annotations;
 using static AStar.Infrastructure.EnumerableExtensions;
 
@@ -51,8 +50,6 @@ public class ListDuplicates(FilesContext context, ILogger<ListDuplicates> logger
             foreach(var file in fileGroup)
             {
                 fileDtos.Add(new FileInfoDto(file));
-                var fileDetail = await context.FileAccessDetails.FirstAsync(fileDetail => fileDetail.Id == file.Id, cancellationToken: cancellationToken);
-                fileDetail.LastViewed = DateTime.UtcNow;
             }
 
             fileList.Add(new DuplicateGroup() { Group = new() { FileLength = key.FileLength, Width = key.Width, Height = key.Height }, Files = fileDtos });

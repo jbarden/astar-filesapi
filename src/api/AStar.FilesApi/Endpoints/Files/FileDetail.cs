@@ -10,7 +10,7 @@ namespace AStar.FilesApi.Endpoints.Files;
 [Route("api/files")]
 public class FileDetail(FilesContext context, ILogger<MarkForHardDeletion> logger)
             : EndpointBaseAsync
-                    .WithRequest<int>
+                    .WithRequest<Guid>
                     .WithActionResult<FileInfoDto>
 {
     [HttpGet("detail")]
@@ -20,7 +20,7 @@ public class FileDetail(FilesContext context, ILogger<MarkForHardDeletion> logge
         OperationId = "File_Detail",
         Tags = ["Files"])
 ]
-    public override async Task<ActionResult<FileInfoDto>> HandleAsync(int request, CancellationToken cancellationToken = default)
+    public override async Task<ActionResult<FileInfoDto>> HandleAsync(Guid request, CancellationToken cancellationToken = default)
     {
         var specifiedFile = await context.Files.FirstOrDefaultAsync(file => file.Id == request, cancellationToken: cancellationToken);
         if(specifiedFile != null)

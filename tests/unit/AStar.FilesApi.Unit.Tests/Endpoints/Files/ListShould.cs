@@ -86,7 +86,7 @@ public class ListShould : IClassFixture<ListFixture>
     [Fact]
     public async Task GetTheExpectedCountWhenFilterAppliedThatTargetsSpecificFolderRecursively()
     {
-        var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\Temp\Famous", Recursive = true}, CancellationToken.None)).Result as OkObjectResult;
+        var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"c:\temp\Famous", Recursive = true}, CancellationToken.None)).Result as OkObjectResult;
 
         var value = (IReadOnlyCollection<FileInfoDto>)response!.Value!;
 
@@ -96,7 +96,7 @@ public class ListShould : IClassFixture<ListFixture>
     [Fact]
     public async Task GetTheExpectedFilesWhenFilterAppliedThatTargetsSpecificFolderRecursively()
     {
-        var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\Temp\Famous", Recursive = true}, CancellationToken.None)).Result as OkObjectResult;
+        var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"c:\temp\Famous", Recursive = true}, CancellationToken.None)).Result as OkObjectResult;
 
         var value = (IReadOnlyCollection<FileInfoDto>)response!.Value!;
 
@@ -106,7 +106,7 @@ public class ListShould : IClassFixture<ListFixture>
     [Fact]
     public async Task GetTheExpectedFilesWhenFilterAppliedThatCapturesAllSupportedImageTypesFromStartingSubFolderAnHonourTheSizeDescendingSortOrder()
     {
-        var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\Temp\", Recursive = true, SearchType = SearchType.Images, SortOrder = SortOrder.SizeDescending}, CancellationToken.None)).Result as OkObjectResult;
+        var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"c:\temp\", Recursive = true, SearchType = SearchType.Images, SortOrder = SortOrder.SizeDescending}, CancellationToken.None)).Result as OkObjectResult;
 
         var value = (IReadOnlyCollection<FileInfoDto>)response!.Value!;
 
@@ -116,7 +116,7 @@ public class ListShould : IClassFixture<ListFixture>
     [Fact]
     public async Task GetTheExpectedFilesWhenFilterAppliedThatCapturesAllSupportedImageTypesFromStartingSubFolderAnHonourTheSizeAscendingSortOrder()
     {
-        var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\Temp\", Recursive = true, SearchType = SearchType.Images, SortOrder = SortOrder.SizeAscending}, CancellationToken.None)).Result as OkObjectResult;
+        var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"c:\temp\", Recursive = true, SearchType = SearchType.Images, SortOrder = SortOrder.SizeAscending}, CancellationToken.None)).Result as OkObjectResult;
 
         var value = (IReadOnlyCollection<FileInfoDto>)response!.Value!;
 

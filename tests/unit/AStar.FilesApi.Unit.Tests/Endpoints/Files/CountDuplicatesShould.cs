@@ -16,7 +16,7 @@ public class CountDuplicatesShould(CountDuplicatesFixture mockFilesFixture) : IC
     [Fact]
     public async Task GetTheExpectedCountOfDuplicateFileGroupsWhenStartingAtTheRootFolder()
     {
-        var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\", Recursive = true }, CancellationToken.None)).Result as OkObjectResult;
+        var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"c:\", Recursive = true }, CancellationToken.None)).Result as OkObjectResult;
 
         _ = response!.Value.Should().Be(20);
     }
@@ -24,7 +24,7 @@ public class CountDuplicatesShould(CountDuplicatesFixture mockFilesFixture) : IC
     [Fact]
     public async Task GetTheExpectedCountOfDuplicateFileGroupsWhenStartingAtSubFolder()
     {
-        var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"C:\Temp\Famous", Recursive = true }, CancellationToken.None)).Result as OkObjectResult;
+        var response = (await mockFilesFixture.SUT.HandleAsync(new(){SearchFolder = @"c:\temp\AI", Recursive = true }, CancellationToken.None)).Result as OkObjectResult;
 
         _ = response!.Value.Should().Be(13);
     }
