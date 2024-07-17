@@ -21,7 +21,7 @@ public static class Program
                        .AddLogging("astar-logging-settings.json");
 
             Log.Information("Starting {AppName}", typeof(Program).AssemblyQualifiedName);
-            _ = builder.Services.ConfigureApi(new OpenApiInfo() { Title = "AStar Web Files API", Version = "v1" });
+            _ = builder.Services.ConfigureApi(new OpenApiInfo() { Title = "AStar Web Files API", Version = "v1" }, true);
             _ = Services.Configure(builder.Services, builder.Configuration);
 
             var app = builder.Build()
