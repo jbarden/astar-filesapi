@@ -1,0 +1,112 @@
+﻿[
+  {
+    Id: Guid_1,
+    Name: 100000110_hd_638511176661199240_hd.jpg,
+    FullName: c:\temp\AI\100000110_hd_638511176661199240_hd.jpg,
+    Size: 8204752,
+    Extension: jpg,
+    SoftDeleted: false,
+    SoftDeletePending: false,
+    NeedsToMove: false,
+    HardDeletePending: false
+  },
+  {
+    Id: Guid_2,
+    Name: 100000102_hd_638509609800324210_hd.jpg,
+    FullName: c:\temp\AI\100000102_hd_638509609800324210_hd.jpg,
+    Size: 7321172,
+    Extension: jpg,
+    SoftDeleted: false,
+    SoftDeletePending: false,
+    NeedsToMove: false,
+    HardDeletePending: false
+  },
+  {
+    Id: Guid_3,
+    Name: 100000102_hd_638509609800324210_hd.jpg,
+    FullName: c:\temp\wwwroot - Copy\AI\100000102_hd_638509609800324210_hd.jpg,
+    Size: 7321172,
+    Extension: jpg,
+    SoftDeleted: false,
+    SoftDeletePending: false,
+    NeedsToMove: false,
+    HardDeletePending: false
+  },
+  {
+    Id: Guid_4,
+    Name: wallhaven-zyvrdv.jpg,
+    FullName: c:\temp\wallhaven-zyvrdv.jpg,
+    Size: 6970497,
+    Extension: jpg,
+    SoftDeleted: false,
+    SoftDeletePending: false,
+    NeedsToMove: false,
+    HardDeletePending: false
+  },
+  {
+    Id: Guid_5,
+    Name: wallhaven-l8g7yl.jpg,
+    FullName: c:\temp\wallhaven-l8g7yl.jpg,
+    Size: 6193170,
+    Extension: jpg,
+    SoftDeleted: false,
+    SoftDeletePending: false,
+    NeedsToMove: false,
+    HardDeletePending: false
+  },
+  {
+    Id: Guid_6,
+    Name: wallhaven-vq2v65.jpg,
+    FullName: c:\temp\wwwroot - Copy\css\open-iconic\wallhaven-vq2v65.jpg,
+    Size: 3472385,
+    Extension: jpg,
+    SoftDeleted: false,
+    SoftDeletePending: false,
+    NeedsToMove: false,
+    HardDeletePending: false
+  },
+  {
+    Id: Guid_7,
+    Name: wallhaven-exrqrr.jpg,
+    FullName: c:\temp\wallhaven-exrqrr.jpg,
+    Size: 2649255,
+    Extension: jpg,
+    SoftDeleted: false,
+    SoftDeletePending: false,
+    NeedsToMove: false,
+    HardDeletePending: false
+  },
+  {
+    Id: Guid_8,
+    Name: wallhaven-l8vgvr.jpg,
+    FullName: c:\temp\wallhaven-l8vgvr.jpg,
+    Size: 2631479,
+    Extension: jpg,
+    SoftDeleted: false,
+    SoftDeletePending: false,
+    NeedsToMove: false,
+    HardDeletePending: false
+  },
+  {
+    Id: Guid_9,
+    Name: wallhaven-8568w2.png,
+    FullName: c:\temp\wallhaven-8568w2.png,
+    Size: 2448120,
+    Extension: png,
+    SoftDeleted: false,
+    SoftDeletePending: false,
+    NeedsToMove: false,
+    HardDeletePending: false
+  },
+  {
+    Id: Guid_10,
+    Name: wallhaven-ex221l.jpg,
+    FullName: c:\temp\wallhaven-ex221l.jpg,
+    Size: 2004996,
+    Extension: jpg,
+    SoftDeleted: false,
+    SoftDeletePending: false,
+    NeedsToMove: false,
+    HardDeletePending: false
+  }
+]

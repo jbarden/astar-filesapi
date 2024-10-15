@@ -1,0 +1,479 @@
+﻿[
+  {
+    Group: {
+      FileLength: 38948
+    },
+    Files: [
+      {
+        Name: AStar.Web.UI.pdb,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\bin\Debug\net8.0\AStar.Web.UI.pdb,
+        Size: 38948,
+        Extension: pdb,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: AStar.Web.UI.pdb,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net8.0\AStar.Web.UI.pdb,
+        Size: 38948,
+        Extension: pdb,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 13824
+    },
+    Files: [
+      {
+        Name: AStar.Web.UI.dll,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net8.0\ref\AStar.Web.UI.dll,
+        Size: 13824,
+        Extension: dll,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: AStar.Web.UI.dll,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net8.0\refint\AStar.Web.UI.dll,
+        Size: 13824,
+        Extension: dll,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 6352
+    },
+    Files: [
+      {
+        Name: .gitignore,
+        FullName: c:\temp\.gitignore,
+        Size: 6352,
+        Extension: gitignore,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: .gitignore,
+        FullName: c:\temp\Famous\.gitignore,
+        Size: 6352,
+        Extension: gitignore,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 2625
+    },
+    Files: [
+      {
+        Name: AStar.Web.UI.GeneratedMSBuildEditorConfig.editorconfig,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net7.0\AStar.Web.UI.GeneratedMSBuildEditorConfig.editorconfig,
+        Size: 2625,
+        Extension: editorconfig,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: AStar.Web.UI.GeneratedMSBuildEditorConfig.editorconfig,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net8.0\AStar.Web.UI.GeneratedMSBuildEditorConfig.editorconfig,
+        Size: 2625,
+        Extension: editorconfig,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 2581
+    },
+    Files: [
+      {
+        Name: .gitattributes,
+        FullName: c:\temp\.gitattributes,
+        Size: 2581,
+        Extension: gitattributes,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: .gitattributes,
+        FullName: c:\temp\Famous\.gitattributes,
+        Size: 2581,
+        Extension: gitattributes,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 2388
+    },
+    Files: [
+      {
+        Name: replace.ps1,
+        FullName: c:\temp\replace.ps1,
+        Size: 2388,
+        Extension: ps1,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: replace.ps1,
+        FullName: c:\temp\Famous\replace.ps1,
+        Size: 2388,
+        Extension: ps1,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 2185
+    },
+    Files: [
+      {
+        Name: test.txt,
+        FullName: c:\temp\test.txt,
+        Size: 2185,
+        Extension: txt,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: test.txt,
+        FullName: c:\temp\Famous\test.txt,
+        Size: 2185,
+        Extension: txt,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 2155
+    },
+    Files: [
+      {
+        Name: AStar.Web.UI.staticwebassets.runtime.json,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\bin\Debug\net8.0\AStar.Web.UI.staticwebassets.runtime.json,
+        Size: 2155,
+        Extension: json,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: staticwebassets.development.json,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net8.0\staticwebassets.development.json,
+        Size: 2155,
+        Extension: json,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 1009
+    },
+    Files: [
+      {
+        Name: AStar.Web.UI.AssemblyInfo.cs,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net7.0\AStar.Web.UI.AssemblyInfo.cs,
+        Size: 1009,
+        Extension: cs,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: AStar.Web.UI.AssemblyInfo.cs,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net8.0\AStar.Web.UI.AssemblyInfo.cs,
+        Size: 1009,
+        Extension: cs,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 770
+    },
+    Files: [
+      {
+        Name: AStar.Web.UI.GlobalUsings.g.cs,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net7.0\AStar.Web.UI.GlobalUsings.g.cs,
+        Size: 770,
+        Extension: cs,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: AStar.Web.UI.GlobalUsings.g.cs,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net8.0\AStar.Web.UI.GlobalUsings.g.cs,
+        Size: 770,
+        Extension: cs,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 732
+    },
+    Files: [
+      {
+        Name: AStar.Web.UI.RazorAssemblyInfo.cs,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net7.0\AStar.Web.UI.RazorAssemblyInfo.cs,
+        Size: 732,
+        Extension: cs,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: AStar.Web.UI.RazorAssemblyInfo.cs,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net8.0\AStar.Web.UI.RazorAssemblyInfo.cs,
+        Size: 732,
+        Extension: cs,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 198
+    },
+    Files: [
+      {
+        Name: .NETCoreApp,Version=v7.0.AssemblyAttributes.cs,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net7.0\.NETCoreApp,Version=v7.0.AssemblyAttributes.cs,
+        Size: 198,
+        Extension: cs,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: .NETCoreApp,Version=v8.0.AssemblyAttributes.cs,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net8.0\.NETCoreApp,Version=v8.0.AssemblyAttributes.cs,
+        Size: 198,
+        Extension: cs,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 154
+    },
+    Files: [
+      {
+        Name: appsettings.Development.json,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\appsettings.Development.json,
+        Size: 154,
+        Extension: json,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: appsettings.Development.json,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\bin\Debug\net8.0\appsettings.Development.json,
+        Size: 154,
+        Extension: json,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 151
+    },
+    Files: [
+      {
+        Name: appsettings.json,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\appsettings.json,
+        Size: 151,
+        Extension: json,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: appsettings.json,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\bin\Debug\net8.0\appsettings.json,
+        Size: 151,
+        Extension: json,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {
+      FileLength: 66
+    },
+    Files: [
+      {
+        Name: AStar.Web.UI.AssemblyInfoInputs.cache,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net7.0\AStar.Web.UI.AssemblyInfoInputs.cache,
+        Size: 66,
+        Extension: cache,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: AStar.Web.UI.AssemblyInfoInputs.cache,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net8.0\AStar.Web.UI.AssemblyInfoInputs.cache,
+        Size: 66,
+        Extension: cache,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: AStar.Web.UI.csproj.CoreCompileInputs.cache,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net8.0\AStar.Web.UI.csproj.CoreCompileInputs.cache,
+        Size: 66,
+        Extension: cache,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: AStar.Web.UI.genruntimeconfig.cache,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net8.0\AStar.Web.UI.genruntimeconfig.cache,
+        Size: 66,
+        Extension: cache,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: AStar.Web.UI.RazorAssemblyInfo.cache,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net7.0\AStar.Web.UI.RazorAssemblyInfo.cache,
+        Size: 66,
+        Extension: cache,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: AStar.Web.UI.RazorAssemblyInfo.cache,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net8.0\AStar.Web.UI.RazorAssemblyInfo.cache,
+        Size: 66,
+        Extension: cache,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  },
+  {
+    Group: {},
+    Files: [
+      {
+        Name: AStar.We.C5A7A0FB.Up2Date,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net8.0\AStar.We.C5A7A0FB.Up2Date,
+        Extension: Up2Date,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: AStar.Web.UI.csproj.BuildWithSkipAnalyzers,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\obj\Debug\net8.0\AStar.Web.UI.csproj.BuildWithSkipAnalyzers,
+        Extension: BuildWithSkipAnalyzers,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      },
+      {
+        Name: read.lock,
+        FullName: c:\temp\Blazor.Bootstrap\AStar.Web\AStar.Web.UI\.vs\AStar.Web.UI\FileContentIndex\read.lock,
+        Extension: lock,
+        SoftDeleted: false,
+        SoftDeletePending: false,
+        NeedsToMove: false,
+        HardDeletePending: false
+      }
+    ]
+  }
+]
