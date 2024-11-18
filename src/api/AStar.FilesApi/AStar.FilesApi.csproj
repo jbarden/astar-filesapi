@@ -22,7 +22,7 @@
 		  <PrivateAssets>all</PrivateAssets>
 		  <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
 		</PackageReference>
-		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="8.0.1" />
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="9.0.0" />
 		<PackageReference Include="Swashbuckle.AspNetCore.Annotations" Version="6.9.0" />
 		<PackageReference Include="System.IO.Abstractions" Version="21.0.29" />
 	</ItemGroup>
